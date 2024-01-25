@@ -1,0 +1,16 @@
+{
+    "description": {
+        "author": "Salesforce",
+        "text": [
+            "Represents the Top Browser Bar.",
+            "Click on 'Done' button."
+        ]
+    },
+    "interface": true,
+    "root": true,
+    "methods": [
+        {
+            "name": "clickDone"
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "description": {
+        "author": "Salesforce",
+        "text": [
+            "Selector: dashboardsReportDetailContainer.",
+            "Represents the dashboards:ReportDetailContainer Aura component."
+        ]
+    },
+    "root": true,
+    "selector": {
+        "css": ".container.dashboardsReportDetailContainer"
+    }
+}

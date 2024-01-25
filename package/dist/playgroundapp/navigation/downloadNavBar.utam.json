@@ -1,0 +1,19 @@
+{
+    "description": {
+        "author": "Salesforce",
+        "text": [
+            "Represents the Download Navigation Bar.",
+            "Click on 'Done' or 'Share' in the Navigation Bar."
+        ]
+    },
+    "interface": true,
+    "root": true,
+    "methods": [
+        {
+            "name": "clickDone"
+        },
+        {
+            "name": "clickShare"
+        }
+    ]
+}

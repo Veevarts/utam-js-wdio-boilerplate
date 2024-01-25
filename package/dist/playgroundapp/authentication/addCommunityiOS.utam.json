@@ -1,0 +1,111 @@
+{
+    "description": {
+        "author": "Salesforce",
+        "text": [
+            "Selector: **/XCUIElementTypeScrollView[$type == 'XCUIElementTypeStaticText' AND value CONTAINS 'Welcome to'$]",
+            "Represents the iOS 'Add Community URL' screen.",
+            "Add a community url, toggle whether your site ends in '/s/'."
+        ]
+    },
+    "implements": "utam-playgroundapp/pageObjects/authentication/addCommunity",
+    "root": true,
+    "platform": "native",
+    "profile": [
+        {
+            "platform": [
+                "ios_phone"
+            ]
+        }
+    ],
+    "selector": {
+        "classchain": "**/XCUIElementTypeScrollView[$type == 'XCUIElementTypeStaticText' AND value CONTAINS 'Welcome to'$]"
+    },
+    "exposeRootElement": true,
+    "type": [
+        "actionable",
+        "touchable"
+    ],
+    "methods": [
+        {
+            "name": "addCommunityUrl",
+            "compose": [
+                {
+                    "element": "communityUrl",
+                    "apply": "clearAndType",
+                    "args": [
+                        {
+                            "name": "url",
+                            "type": "string"
+                        }
+                    ]
+                },
+                {
+                    "element": "root",
+                    "apply": "flick",
+                    "args": [
+                        {
+                            "value": 0
+                        },
+                        {
+                            "value": 400
+                        }
+                    ]
+                },
+                {
+                    "element": "continueButton",
+                    "apply": "click"
+                }
+            ]
+        },
+        {
+            "name": "waitAddCommunityDisappear",
+            "compose": [
+                {
+                    "element": "communityUrl",
+                    "apply": "waitForAbsence"
+                }
+            ]
+        },
+        {
+            "name": "toggleSlashS",
+            "compose": [
+                {
+                    "element": "slashSButton",
+                    "apply": "click"
+                }
+            ]
+        }
+    ],
+    "elements": [
+        {
+            "name": "communityUrl",
+            "type": [
+                "editable",
+                "clickable"
+            ],
+            "selector": {
+                "classchain": "**/XCUIElementTypeTextField"
+            }
+        },
+        {
+            "name": "continueButton",
+            "type": [
+                "clickable"
+            ],
+            "selector": {
+                "accessid": "Continue"
+            },
+            "public": true,
+            "nullable": true
+        },
+        {
+            "name": "slashSButton",
+            "type": [
+                "clickable"
+            ],
+            "selector": {
+                "classchain": "**/XCUIElementTypeButton[$name == 'square' OR name == 'selected'$]"
+            }
+        }
+    ]
+}

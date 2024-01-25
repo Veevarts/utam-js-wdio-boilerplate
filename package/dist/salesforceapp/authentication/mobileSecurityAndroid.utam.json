@@ -1,0 +1,64 @@
+{
+    "description": {
+        "author": "Salesforce",
+        "text": [
+            "Selector: resourceId(\"com.salesforce.chatter:id/action_bar_root\").childSelector(new UiSelector().resourceId(\"android:id/content\")).",
+            "Represents content of the action bar in the Android 'Mobile Security' activity.",
+            "Refresh and resolve the security check and verify the details of the result."
+        ]
+    },
+    "implements": "utam-salesforceapp/pageObjects/authentication/mobileSecurity",
+    "root": true,
+    "platform": "native",
+    "profile": [
+        {
+            "platform": [
+                "android_phone",
+                "android_tablet"
+            ]
+        }
+    ],
+    "selector": {
+        "uiautomator": "resourceId(\"com.salesforce.chatter:id/action_bar_root\").childSelector(new UiSelector().resourceId(\"android:id/content\"))"
+    },
+    "elements": [
+        {
+            "name": "infoAndHealthyPoliciesButton",
+            "type": [
+                "clickable"
+            ],
+            "selector": {
+                "uiautomator": "resourceId(\"com.salesforce.chatter:id/info_button\")"
+            }
+        },
+        {
+            "name": "resolveButton",
+            "type": [
+                "clickable"
+            ],
+            "selector": {
+                "uiautomator": "resourceId(\"com.salesforce.chatter:id/resolve_button\")"
+            }
+        }
+    ],
+    "methods": [
+        {
+            "name": "clickInfoAndHealthyPolicies",
+            "compose": [
+                {
+                    "element": "infoAndHealthyPoliciesButton",
+                    "apply": "click"
+                }
+            ]
+        },
+        {
+            "name": "clickRefresh",
+            "compose": [
+                {
+                    "element": "resolveButton",
+                    "apply": "click"
+                }
+            ]
+        }
+    ]
+}

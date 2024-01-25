@@ -1,0 +1,24 @@
+{
+    "description": {
+        "author": "Salesforce",
+        "text": [
+            "Selector: className(\"android.widget.TextView\").text(\"Info & Healthy Policies\").",
+            "Represents the title text view in the Android 'Info and Healthy Policies' fragment.",
+            "Verify page load"
+        ]
+    },
+    "implements": "utam-salesforceapp/pageObjects/authentication/infoAndHealthyPolicies",
+    "root": true,
+    "platform": "native",
+    "profile": [
+        {
+            "platform": [
+                "android_phone",
+                "android_tablet"
+            ]
+        }
+    ],
+    "selector": {
+        "uiautomator": "className(\"android.widget.TextView\").text(\"Info & Healthy Policies\")"
+    }
+}

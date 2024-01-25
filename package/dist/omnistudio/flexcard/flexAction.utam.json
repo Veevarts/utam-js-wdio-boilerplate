@@ -1,0 +1,39 @@
+{
+    "description": {
+        "text": [
+            "Selector: runtime_omnistudio_flexcards-flex-action"
+        ],
+        "author": "Salesforce"
+    },
+    "shadow": {
+        "elements": [
+            {
+                "name": "actionLink",
+                "public": true,
+                "selector": {
+                    "css": "a.slds-action_item"
+                },
+                "type": [
+                    "clickable"
+                ]
+            },
+            {
+                "name": "actionMenu",
+                "public": true,
+                "selector": {
+                    "css": "a.slds-action_menu"
+                },
+                "type": [
+                    "clickable"
+                ]
+            },
+            {
+                "name": "actionName",
+                "public": true,
+                "selector": {
+                    "css": "span.slds-action_text span"
+                }
+            }
+        ]
+    }
+}

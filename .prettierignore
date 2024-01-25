@@ -1,0 +1,9 @@
+.github/**/*.md
+build/
+dist/
+node_modules/
+**/pageObjects/
+**/utils/
+*.md
+.sfdx
+.sf

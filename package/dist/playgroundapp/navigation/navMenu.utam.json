@@ -1,0 +1,39 @@
+{
+    "description": {
+        "author": "Salesforce",
+        "text": [
+            "Represents the menu fragment.",
+            "Check if a navigation item is present or click on it."
+        ]
+    },
+    "interface": true,
+    "root": true,
+    "methods": [
+        {
+            "name": "clickNavItem",
+            "args": [
+                {
+                    "name": "label",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "hasNavItem",
+            "returnType": "boolean",
+            "args": [
+                {
+                    "name": "item",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "getNavItems",
+            "returnType": [
+                "clickable"
+            ],
+            "returnAll": true
+        }
+    ]
+}

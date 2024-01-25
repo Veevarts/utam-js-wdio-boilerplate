@@ -1,0 +1,36 @@
+{
+    "description": {
+        "author": "Salesforce",
+        "text": [
+            "Selector: lightning-input-select.",
+            "Represents the related list choose Pricebook action.",
+            "You can access the picklist options."
+        ]
+    },
+    "elements": [
+        {
+            "name": "choosePricebookInputSelect",
+            "type": "utam-aura/pageObjects/inputSelect",
+            "public": true,
+            "selector": {
+                "css": "div.uiInputSelect"
+            }
+        },
+        {
+            "name": "choosePricebookMenuList",
+            "type": "utam-aura/pageObjects/menuList",
+            "public": true,
+            "selector": {
+                "css": "div.uiMenuList"
+            }
+        },
+        {
+            "name": "pricebookList",
+            "type": "utam-force/pageObjects/inputPicklist",
+            "public": true,
+            "selector": {
+                "css": ".forceInputPicklist"
+            }
+        }
+    ]
+}

@@ -1,0 +1,58 @@
+{
+    "description": {
+        "author": "Salesforce",
+        "text": [
+            "Represents the action tray at the bottom of some pages.",
+            "Provides methods for opening and interacting with the action tray."
+        ]
+    },
+    "implements": "utam-sfsmobileapp/pageObjects/actionBar/actionTray",
+    "platform": "native",
+    "profile": [
+        {
+            "platform": [
+                "android_phone"
+            ]
+        }
+    ],
+    "elements": [
+        {
+            "name": "actionTray",
+            "type": [
+                "clickable"
+            ],
+            "selector": {
+                "uiautomator": "resourceId(\"com.salesforce.fieldservice.app:id/action_launcher_header_container\")"
+            }
+        }
+    ],
+    "methods": [
+        {
+            "name": "openActionTray",
+            "compose": [
+                {
+                    "element": "actionTray",
+                    "apply": "click"
+                }
+            ]
+        },
+        {
+            "name": "maximizeActionTray",
+            "compose": [
+                {
+                    "element": "actionTray",
+                    "apply": "click"
+                }
+            ]
+        },
+        {
+            "name": "closeActionTray",
+            "compose": [
+                {
+                    "element": "actionTray",
+                    "apply": "click"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,87 @@
+{
+    "description": {
+        "author": "Salesforce",
+        "text": [
+            "Selector: commerce_my_account-navigation-menu-container",
+            "Component: navigationMenuContainer"
+        ]
+    },
+    "beforeLoad": [
+        {
+            "apply": "waitFor",
+            "args": [
+                {
+                    "type": "function",
+                    "predicate": [
+                        {
+                            "element": "root",
+                            "apply": "containsElement",
+                            "args": [
+                                {
+                                    "type": "locator",
+                                    "value": {
+                                        "css": "[slot='welcomeMessage']"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "element": "root",
+                            "apply": "containsElement",
+                            "args": [
+                                {
+                                    "type": "locator",
+                                    "value": {
+                                        "css": "[slot='navigationMenuItemList']"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "elements": [
+        {
+            "name": "welcomeMessageContainer",
+            "selector": {
+                "css": "[slot='welcomeMessage']"
+            }
+        },
+        {
+            "public": true,
+            "name": "navigationMenuItemListContainer",
+            "type": "container",
+            "selector": {
+                "css": "[slot='navigationMenuItemList']"
+            }
+        }
+    ],
+    "methods": [
+        {
+            "name": "getMyAccountNavigationInfo",
+            "compose": [
+                {
+                    "element": "navigationMenuItemListContainer",
+                    "returnType": "utam-commerce_my_account/pageObjects/navigationMenuItemList",
+                    "args": [
+                        {
+                            "value": "utam-commerce_my_account/pageObjects/navigationMenuItemList",
+                            "type": "pageObject"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "getWelcomeMessageText",
+            "compose": [
+                {
+                    "element": "welcomeMessageContainer",
+                    "apply": "getText"
+                }
+            ]
+        }
+    ]
+}

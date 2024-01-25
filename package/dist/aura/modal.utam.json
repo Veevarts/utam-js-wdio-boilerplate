@@ -1,0 +1,85 @@
+{
+    "description": {
+        "author": "Salesforce",
+        "text": [
+            "Selector: .uiModal.",
+            "Represents the ui:modal Aura component.",
+            "Close the modal, get the modal header, or the body or footer elements.."
+        ]
+    },
+    "root": true,
+    "selector": {
+        "css": ".uiModal.active"
+    },
+    "elements": [
+        {
+            "name": "modalHeader",
+            "selector": {
+                "css": ".modal-header"
+            },
+            "elements": [
+                {
+                    "name": "headerContent",
+                    "type": "container",
+                    "selector": {
+                        "css": ":scope > *:first-child:not(h2)"
+                    },
+                    "public": true
+                }
+            ]
+        },
+        {
+            "name": "modalBody",
+            "selector": {
+                "css": ".modal-body"
+            },
+            "elements": [
+                {
+                    "name": "bodyContent",
+                    "type": "container",
+                    "selector": {
+                        "css": "div"
+                    },
+                    "public": true
+                }
+            ]
+        },
+        {
+            "name": "modalFooter",
+            "selector": {
+                "css": ".modal-footer"
+            },
+            "elements": [
+                {
+                    "name": "footerContent",
+                    "type": "container",
+                    "selector": {
+                        "css": ":scope > *:first-child"
+                    },
+                    "public": true
+                }
+            ]
+        },
+        {
+            "name": "closeButton",
+            "selector": {
+                "css": ".slds-modal__close"
+            },
+            "type": [
+                "clickable"
+            ]
+        }
+    ],
+    "methods": [
+        {
+            "name": "close",
+            "description": "Close the modal",
+            "compose": [
+                {
+                    "element": "closeButton",
+                    "apply": "click"
+                }
+            ]
+        }
+    ]
+}

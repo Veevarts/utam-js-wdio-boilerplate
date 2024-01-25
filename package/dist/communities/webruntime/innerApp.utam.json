@@ -1,0 +1,20 @@
+{
+    "description": {
+        "author": "Salesforce",
+        "text": [
+            "Selector: webruntime-inner-app",
+            "Component: communities/webruntime/packages/%40communities-webruntime/client/src/modules/webruntime/innerApp"
+        ]
+    },
+    "root": true,
+    "selector": {
+        "css": "webruntime-inner-app"
+    },
+    "elements": [
+        {
+            "name": "content",
+            "type": "container",
+            "public": true
+        }
+    ]
+}

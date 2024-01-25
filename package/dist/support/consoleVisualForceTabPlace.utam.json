@@ -1,0 +1,57 @@
+{
+    "selector": {
+        "css": ".pbBody"
+    },
+    "root": true,
+    "description": {
+        "text": [
+            "Selector: .pbBody.",
+            "Represents the console visual force tab Aura component.",
+            "Access a link by text or a button by value."
+        ],
+        "author": "Salesforce"
+    },
+    "elements": [
+        {
+            "name": "linkByText",
+            "type": [
+                "clickable"
+            ],
+            "nullable": true,
+            "public": true,
+            "selector": {
+                "css": "a",
+                "returnAll": true
+            },
+            "filter": {
+                "apply": "getText",
+                "findFirst": true,
+                "matcher": {
+                    "type": "stringContains",
+                    "args": [
+                        {
+                            "name": "text",
+                            "type": "string"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "buttonByValue",
+            "type": [
+                "clickable"
+            ],
+            "public": true,
+            "selector": {
+                "css": "input[value='%s']",
+                "args": [
+                    {
+                        "name": "value",
+                        "type": "string"
+                    }
+                ]
+            }
+        }
+    ]
+}

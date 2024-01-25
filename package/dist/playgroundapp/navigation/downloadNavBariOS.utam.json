@@ -1,0 +1,79 @@
+{
+    "description": {
+        "author": "Salesforce",
+        "text": [
+            "Selector: **/XCUIElementTypeNavigationBar.",
+            "Represents the iOS Download Navigation Bar.",
+            "Click on 'Done' or 'Share' in the Navigation Bar."
+        ]
+    },
+    "implements": "utam-playgroundapp/pageObjects/navigation/downloadNavBar",
+    "root": true,
+    "platform": "native",
+    "profile": [
+        {
+            "platform": [
+                "ios_phone"
+            ]
+        }
+    ],
+    "selector": {
+        "classchain": "**/XCUIElementTypeNavigationBar"
+    },
+    "beforeLoad": [
+        {
+            "apply": "waitFor",
+            "args": [
+                {
+                    "type": "function",
+                    "predicate": [
+                        {
+                            "element": "root",
+                            "apply": "isPresent"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "methods": [
+        {
+            "name": "clickDone",
+            "compose": [
+                {
+                    "element": "doneButton",
+                    "apply": "click"
+                }
+            ]
+        },
+        {
+            "name": "clickShare",
+            "compose": [
+                {
+                    "element": "shareButton",
+                    "apply": "click"
+                }
+            ]
+        }
+    ],
+    "elements": [
+        {
+            "name": "doneButton",
+            "type": [
+                "clickable"
+            ],
+            "selector": {
+                "accessid": "QLOverlayDoneButtonAccessibilityIdentifier"
+            }
+        },
+        {
+            "name": "shareButton",
+            "type": [
+                "clickable"
+            ],
+            "selector": {
+                "accessid": "QLOverlayDefaultActionButtonAccessibilityIdentifier"
+            }
+        }
+    ]
+}

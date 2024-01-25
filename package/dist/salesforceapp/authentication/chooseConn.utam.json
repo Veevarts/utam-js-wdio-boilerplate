@@ -1,0 +1,25 @@
+{
+    "description": {
+        "author": "Salesforce",
+        "text": [
+            "Represents the 'Change Server' fragment.",
+            "Add a new server, or switch to another existing one by environment name."
+        ]
+    },
+    "root": true,
+    "interface": true,
+    "methods": [
+        {
+            "name": "addNewConnection"
+        },
+        {
+            "name": "switchConnection",
+            "args": [
+                {
+                    "name": "name",
+                    "type": "string"
+                }
+            ]
+        }
+    ]
+}

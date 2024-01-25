@@ -1,0 +1,16 @@
+{
+    "description": {
+        "author": "Salesforce",
+        "text": [
+            "Represents the action bar in the EULA activity.",
+            "Accept the terms."
+        ]
+    },
+    "root": true,
+    "interface": true,
+    "methods": [
+        {
+            "name": "accept"
+        }
+    ]
+}

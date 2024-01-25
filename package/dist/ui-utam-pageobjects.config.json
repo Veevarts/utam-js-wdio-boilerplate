@@ -1,0 +1,18 @@
+{
+    "default": {
+        "impl": [
+            {
+                "interface": "salesforce-pageobjects/global/pageObjects/recordHomeFlexipage2",
+                "implementation": "salesforce-pageobjects/global/pageObjects/recordHomeTemplateDesktop"
+            }
+        ]
+    },
+    "entity": {
+        "lead": [
+            {
+                "interface": "salesforce-pageobjects/global/pageObjects/recordHomeFlexipage2",
+                "implementation": "salesforce-pageobjects/global/pageObjects/recordHomeWithSubheaderTemplateDesktop"
+            }
+        ]
+    }
+}

@@ -1,0 +1,52 @@
+{
+    "description": {
+        "author": "Salesforce",
+        "text": [
+            "Selector: **/XCUIElementTypeWindow.",
+            "Represents the iOS Passcode screen.",
+            "Set passcode."
+        ]
+    },
+    "implements": "utam-playgroundapp/pageObjects/authentication/passcode",
+    "root": true,
+    "platform": "native",
+    "profile": [
+        {
+            "platform": [
+                "ios_phone"
+            ]
+        }
+    ],
+    "selector": {
+        "classchain": "**/XCUIElementTypeWindow"
+    },
+    "methods": [
+        {
+            "name": "setPasscode",
+            "compose": [
+                {
+                    "element": "passcodeInput",
+                    "apply": "clearAndType",
+                    "args": [
+                        {
+                            "name": "passcode",
+                            "type": "string"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "elements": [
+        {
+            "name": "passcodeInput",
+            "type": [
+                "editable",
+                "clickable"
+            ],
+            "selector": {
+                "classchain": "**/XCUIElementTypeSecureTextField"
+            }
+        }
+    ]
+}

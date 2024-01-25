@@ -1,0 +1,41 @@
+{
+    "root": true,
+    "selector": {
+        "css": "feeds_placeholding-empty-feed"
+    },
+    "description": {
+        "author": "Salesforce",
+        "text": [
+            "Selector: feeds_placeholding-empty-feed.",
+            "Represents the feeds_placeholding-empty-feed Lightning web component.",
+            "Get the heading message."
+        ]
+    },
+    "methods": [
+        {
+            "name": "getHeadingMessage",
+            "description": {
+                "text": [
+                    "Gets the heading message of the feed"
+                ],
+                "return": "The heading of the message feed"
+            },
+            "compose": [
+                {
+                    "element": "heading3",
+                    "apply": "getText"
+                }
+            ]
+        }
+    ],
+    "shadow": {
+        "elements": [
+            {
+                "name": "heading3",
+                "selector": {
+                    "css": "figure figcaption h3"
+                }
+            }
+        ]
+    }
+}

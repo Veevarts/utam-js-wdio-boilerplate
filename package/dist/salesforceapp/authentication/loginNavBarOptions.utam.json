@@ -1,0 +1,22 @@
+{
+    "description": {
+        "author": "Salesforce",
+        "text": [
+            "Represents list view of login-related actions from the action bar in the login activity.",
+            "Choose a login-related action: change server, clear cookies, or reload."
+        ]
+    },
+    "root": true,
+    "interface": true,
+    "methods": [
+        {
+            "name": "changeServer"
+        },
+        {
+            "name": "clearCookies"
+        },
+        {
+            "name": "reload"
+        }
+    ]
+}

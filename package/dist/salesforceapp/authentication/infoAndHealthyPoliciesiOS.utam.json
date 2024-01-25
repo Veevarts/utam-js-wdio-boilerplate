@@ -1,0 +1,24 @@
+{
+    "description": {
+        "author": "Salesforce",
+        "text": [
+            "Selector: **/XCUIElementTypeNavigationBar[`name == 'Info & Healthy Policies'`].",
+            "Represents the navigation bar in the iOS 'Info and Healthy Policies' view controller.",
+            "Verify page load"
+        ]
+    },
+    "implements": "utam-salesforceapp/pageObjects/authentication/infoAndHealthyPolicies",
+    "root": true,
+    "platform": "native",
+    "profile": [
+        {
+            "platform": [
+                "ios_phone",
+                "ios_tablet"
+            ]
+        }
+    ],
+    "selector": {
+        "classchain": "**/XCUIElementTypeNavigationBar[`name == 'Info & Healthy Policies'`]"
+    }
+}

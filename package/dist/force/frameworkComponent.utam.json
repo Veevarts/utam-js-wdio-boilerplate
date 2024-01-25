@@ -1,0 +1,47 @@
+{
+    "description": {
+        "author": "Salesforce",
+        "text": [
+            "Selector: builder_framework-component",
+            "Represents the builder_framework-component web component.",
+            "Access different fields in the  container modal."
+        ]
+    },
+    "shadow": {
+        "elements": [
+            {
+                "name": "xLazy",
+                "selector": {
+                    "css": ".x-lazy"
+                },
+                "type": "utam-force/pageObjects/xLazy"
+            }
+        ]
+    },
+    "methods": [
+        {
+            "description": {
+                "text": [
+                    "Wait for and return xLazy"
+                ],
+                "return": "utam-setup/pageObjects/xLazy"
+            },
+            "name": "getAndWaitForXLazy",
+            "compose": [
+                {
+                    "apply": "waitFor",
+                    "args": [
+                        {
+                            "type": "function",
+                            "predicate": [
+                                {
+                                    "element": "xLazy"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,133 @@
+{
+    "description": {
+        "author": "Salesforce",
+        "text": [
+            "Selector: lightning-vertical-navigation-item.",
+            "Represents the lightning-vertical-navigation-item Lightning web component.",
+            "Get the item name, or get the badge count. Check if the item has a badge or an icon, or if the item is selected."
+        ]
+    },
+    "type": [
+        "clickable"
+    ],
+    "methods": [
+        {
+            "name": "getName",
+            "description": {
+                "text": [
+                    "Get the item link name"
+                ],
+                "return": "string"
+            },
+            "compose": [
+                {
+                    "element": "itemLink",
+                    "apply": "getText"
+                }
+            ]
+        },
+        {
+            "name": "getBadgeCount",
+            "description": {
+                "text": [
+                    "Get the badge count"
+                ],
+                "return": "string"
+            },
+            "compose": [
+                {
+                    "element": "badge",
+                    "apply": "getText"
+                }
+            ]
+        },
+        {
+            "name": "hasBadge",
+            "description": {
+                "text": [
+                    "Checks if the item has a badge"
+                ],
+                "return": "boolean"
+            },
+            "compose": [
+                {
+                    "element": "badge",
+                    "apply": "isPresent"
+                }
+            ]
+        },
+        {
+            "name": "hasIcon",
+            "description": {
+                "text": [
+                    "Checks if the item has a icon"
+                ],
+                "return": "boolean"
+            },
+            "compose": [
+                {
+                    "element": "icon",
+                    "apply": "isPresent"
+                }
+            ]
+        },
+        {
+            "name": "isSelected",
+            "description": {
+                "text": [
+                    "Checks if the item is selected"
+                ],
+                "return": "boolean"
+            },
+            "compose": [
+                {
+                    "element": "selectedIndictor",
+                    "apply": "isPresent"
+                }
+            ]
+        }
+    ],
+    "shadow": {
+        "elements": [
+            {
+                "name": "itemLink",
+                "type": [
+                    "clickable",
+                    "actionable"
+                ],
+                "selector": {
+                    "css": "a[class*='slds-nav-vertical']"
+                }
+            },
+            {
+                "name": "selectedIndictor",
+                "nullable": true,
+                "type": [
+                    "actionable"
+                ],
+                "selector": {
+                    "css": "a[aria-current='page']"
+                }
+            },
+            {
+                "name": "badge",
+                "nullable": true,
+                "type": [
+                    "actionable"
+                ],
+                "selector": {
+                    "css": ".slds-badge"
+                }
+            },
+            {
+                "name": "icon",
+                "public": true,
+                "nullable": true,
+                "type": "utam-lightning/pageObjects/icon",
+                "selector": {
+                    "css": "lightning-icon"
+                }
+            }
+        ]
+    }
+}

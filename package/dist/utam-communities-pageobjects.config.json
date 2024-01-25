@@ -1,0 +1,76 @@
+{
+    "platform": {
+        "android_phone": [
+            {
+                "interface": "salesforce-pageobjects/playgroundapp/pageObjects/authentication/addCommunity",
+                "implementation": "salesforce-pageobjects/playgroundapp/pageObjects/authentication/addCommunityAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/playgroundapp/pageObjects/authentication/eula",
+                "implementation": "salesforce-pageobjects/playgroundapp/pageObjects/authentication/eulaAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/playgroundapp/pageObjects/dialog/alert",
+                "implementation": "salesforce-pageobjects/playgroundapp/pageObjects/dialog/alertAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/playgroundapp/pageObjects/dialog/parentPanel",
+                "implementation": "salesforce-pageobjects/playgroundapp/pageObjects/dialog/parentPanelAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/playgroundapp/pageObjects/navigation/navMenu",
+                "implementation": "salesforce-pageobjects/playgroundapp/pageObjects/navigation/navMenuAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/playgroundapp/pageObjects/navigation/navTabBar",
+                "implementation": "salesforce-pageobjects/playgroundapp/pageObjects/navigation/navTabBarAndroid"
+            }
+        ],
+        "ios_phone": [
+            {
+                "interface": "salesforce-pageobjects/playgroundapp/pageObjects/authentication/addCommunity",
+                "implementation": "salesforce-pageobjects/playgroundapp/pageObjects/authentication/addCommunityiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/playgroundapp/pageObjects/authentication/eula",
+                "implementation": "salesforce-pageobjects/playgroundapp/pageObjects/authentication/eulaiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/playgroundapp/pageObjects/authentication/passcode",
+                "implementation": "salesforce-pageobjects/playgroundapp/pageObjects/authentication/passcodeiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/playgroundapp/pageObjects/dialog/alert",
+                "implementation": "salesforce-pageobjects/playgroundapp/pageObjects/dialog/alertiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/playgroundapp/pageObjects/dialog/toast",
+                "implementation": "salesforce-pageobjects/playgroundapp/pageObjects/dialog/toastiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/playgroundapp/pageObjects/navigation/contextMenu",
+                "implementation": "salesforce-pageobjects/playgroundapp/pageObjects/navigation/contextMenuiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/playgroundapp/pageObjects/navigation/downloadNavBar",
+                "implementation": "salesforce-pageobjects/playgroundapp/pageObjects/navigation/downloadNavBariOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/playgroundapp/pageObjects/navigation/fabIconButton",
+                "implementation": "salesforce-pageobjects/playgroundapp/pageObjects/navigation/fabIconButtoniOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/playgroundapp/pageObjects/navigation/navMenu",
+                "implementation": "salesforce-pageobjects/playgroundapp/pageObjects/navigation/navMenuiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/playgroundapp/pageObjects/navigation/navTabBar",
+                "implementation": "salesforce-pageobjects/playgroundapp/pageObjects/navigation/navTabBariOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/playgroundapp/pageObjects/navigation/topBrowserBar",
+                "implementation": "salesforce-pageobjects/playgroundapp/pageObjects/navigation/topBrowserBariOS"
+            }
+        ]
+    }
+}

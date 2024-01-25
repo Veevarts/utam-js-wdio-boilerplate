@@ -1,0 +1,45 @@
+{
+    "description": {
+        "author": "Salesforce",
+        "text": [
+            "Selector: **/XCUIElementTypeButton[`name == \"FABIcon\"`].",
+            "Represents the iOS FAB Icon button.",
+            "Click on the FAB Icon button."
+        ]
+    },
+    "implements": "utam-playgroundapp/pageObjects/navigation/fabIconButton",
+    "root": true,
+    "platform": "native",
+    "profile": [
+        {
+            "platform": [
+                "ios_phone"
+            ]
+        }
+    ],
+    "selector": {
+        "classchain": "**/XCUIElementTypeButton[`name == \"FABIcon\"`]"
+    },
+    "methods": [
+        {
+            "name": "clickButton",
+            "compose": [
+                {
+                    "element": "fabIconButton",
+                    "apply": "click"
+                }
+            ]
+        }
+    ],
+    "elements": [
+        {
+            "name": "fabIconButton",
+            "type": [
+                "clickable"
+            ],
+            "selector": {
+                "accessid": "FABIcon"
+            }
+        }
+    ]
+}

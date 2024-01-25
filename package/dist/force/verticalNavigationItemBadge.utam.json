@@ -1,0 +1,61 @@
+{
+    "description": {
+        "author": "Salesforce",
+        "text": [
+            "Selector: lightning-vertical-navigation-item-badge.",
+            "Represents the lightning-vertical-navigation-item-badge Lightning web component.",
+            "Get the item link by text, or get the badge text."
+        ]
+    },
+    "shadow": {
+        "elements": [
+            {
+                "name": "navigationItemLink",
+                "type": [
+                    "clickable"
+                ],
+                "public": true,
+                "selector": {
+                    "css": "a[class*='slds-nav-vertical']",
+                    "returnAll": true
+                },
+                "filter": {
+                    "apply": "getText",
+                    "findFirst": true,
+                    "matcher": {
+                        "type": "stringContains",
+                        "args": [
+                            {
+                                "name": "text",
+                                "type": "string"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "name": "badgeText",
+                "selector": {
+                    "css": "a[class*='slds-nav-vertical'] .slds-badge"
+                }
+            }
+        ]
+    },
+    "methods": [
+        {
+            "name": "getBadgeText",
+            "description": {
+                "text": [
+                    "Get the badge text"
+                ],
+                "return": "string"
+            },
+            "compose": [
+                {
+                    "element": "badgeText",
+                    "apply": "getText"
+                }
+            ]
+        }
+    ]
+}

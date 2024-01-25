@@ -1,0 +1,30 @@
+{
+    "description": {
+        "author": "Salesforce",
+        "text": [
+            "Selector: lst-common-list-internal.",
+            "Represents the common list internal Lightning web component.",
+            "Access the list header, as well as the primary display manager."
+        ]
+    },
+    "shadow": {
+        "elements": [
+            {
+                "type": "utam-lists/pageObjects/listViewManagerHeader",
+                "name": "header",
+                "public": true,
+                "selector": {
+                    "css": "lst-list-view-manager-header"
+                }
+            },
+            {
+                "type": "utam-lists/pageObjects/primaryDisplayManager",
+                "name": "displayManager",
+                "public": true,
+                "selector": {
+                    "css": "lst-primary-display-manager"
+                }
+            }
+        ]
+    }
+}

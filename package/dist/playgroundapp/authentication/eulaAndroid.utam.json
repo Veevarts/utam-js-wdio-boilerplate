@@ -1,0 +1,45 @@
+{
+    "description": {
+        "author": "Salesforce",
+        "text": [
+            "Selector: resourceId(\"com.mysalesforce.mycommunity.playgroundcommunity:id/playgroundEula\")",
+            "Represents the Android EULA activity.",
+            "Accepts the terms."
+        ]
+    },
+    "implements": "utam-playgroundapp/pageObjects/authentication/eula",
+    "platform": "native",
+    "profile": [
+        {
+            "platform": [
+                "android_phone"
+            ]
+        }
+    ],
+    "root": true,
+    "selector": {
+        "uiautomator": "resourceId(\"com.mysalesforce.mycommunity.playgroundcommunity:id/playgroundEula\")"
+    },
+    "methods": [
+        {
+            "name": "accept",
+            "compose": [
+                {
+                    "element": "iaccept",
+                    "apply": "click"
+                }
+            ]
+        }
+    ],
+    "elements": [
+        {
+            "type": [
+                "clickable"
+            ],
+            "name": "iaccept",
+            "selector": {
+                "uiautomator": "resourceId(\"com.mysalesforce.mycommunity.playgroundcommunity:id/playgroundEulaAgree\")"
+            }
+        }
+    ]
+}

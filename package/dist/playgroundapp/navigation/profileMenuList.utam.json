@@ -1,0 +1,94 @@
+{
+    "description": {
+        "author": "Salesforce",
+        "text": [
+            "Selector: .profile-menuList.slds-nubbin_top-right.profile-menuList--iconOnly.dropdownDirection-left div.",
+            "Represents Profile Navigation Menu.",
+            "Access profile menu items."
+        ]
+    },
+    "root": true,
+    "beforeLoad": [
+        {
+            "apply": "waitFor",
+            "args": [
+                {
+                    "type": "function",
+                    "predicate": [
+                        {
+                            "element": "root",
+                            "apply": "isPresent"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "selector": {
+        "css": ".profile-menuList.slds-nubbin_top-right.profile-menuList--iconOnly.dropdownDirection-left div"
+    },
+    "methods": [
+        {
+            "name": "clickNavItem",
+            "description": "Click a nav item by label",
+            "compose": [
+                {
+                    "element": "navItemByLabel",
+                    "apply": "click"
+                }
+            ]
+        },
+        {
+            "name": "hasNavItem",
+            "description": {
+                "text": [
+                    "Check if nav item by label exists"
+                ],
+                "return": "boolean"
+            },
+            "compose": [
+                {
+                    "element": "navItemByLabel",
+                    "apply": "isVisible"
+                }
+            ]
+        }
+    ],
+    "elements": [
+        {
+            "name": "navItemByLabel",
+            "type": [
+                "clickable"
+            ],
+            "selector": {
+                "css": ".profile-menuItem",
+                "returnAll": true
+            },
+            "filter": {
+                "apply": "getText",
+                "matcher": {
+                    "type": "stringEquals",
+                    "args": [
+                        {
+                            "name": "titleString",
+                            "type": "string"
+                        }
+                    ]
+                },
+                "findFirst": true
+            },
+            "public": true
+        },
+        {
+            "name": "navItems",
+            "type": [
+                "clickable"
+            ],
+            "public": true,
+            "selector": {
+                "css": ".profile-menuItem",
+                "returnAll": true
+            }
+        }
+    ]
+}

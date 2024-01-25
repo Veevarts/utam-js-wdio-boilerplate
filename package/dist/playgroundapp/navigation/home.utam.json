@@ -1,0 +1,171 @@
+{
+    "description": {
+        "author": "Salesforce",
+        "text": [
+            "Selector: body.comm-page-home.",
+            "Represents the Home screen.",
+            "Select an action from the screen or get the list of Files."
+        ]
+    },
+    "root": true,
+    "beforeLoad": [
+        {
+            "apply": "waitFor",
+            "args": [
+                {
+                    "type": "function",
+                    "predicate": [
+                        {
+                            "element": "root",
+                            "apply": "isPresent"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "selector": {
+        "css": "body.comm-page-home"
+    },
+    "methods": [
+        {
+            "name": "clickShopNow",
+            "compose": [
+                {
+                    "element": "shopNowButton",
+                    "apply": "click"
+                }
+            ]
+        },
+        {
+            "name": "clickReadMore",
+            "compose": [
+                {
+                    "element": "readMoreButton",
+                    "apply": "click"
+                }
+            ]
+        },
+        {
+            "name": "clickShowMore",
+            "compose": [
+                {
+                    "apply": "waitFor",
+                    "args": [
+                        {
+                            "type": "function",
+                            "predicate": [
+                                {
+                                    "element": "root",
+                                    "apply": "containsElement",
+                                    "args": [
+                                        {
+                                            "type": "locator",
+                                            "value": {
+                                                "css": "div.uiPopupTrigger a.menuButton"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "element": "showMoreButton",
+                    "apply": "waitForVisible"
+                },
+                {
+                    "element": "showMoreButton",
+                    "apply": "click"
+                }
+            ]
+        },
+        {
+            "name": "getFileList",
+            "compose": [
+                {
+                    "apply": "waitFor",
+                    "args": [
+                        {
+                            "type": "function",
+                            "predicate": [
+                                {
+                                    "element": "fileList"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "elements": [
+        {
+            "name": "contentTitle",
+            "type": [
+                "actionable"
+            ],
+            "selector": {
+                "css": "H2.contentTitle"
+            },
+            "public": true
+        },
+        {
+            "name": "shopNowButton",
+            "type": [
+                "clickable"
+            ],
+            "selector": {
+                "css": "a.ctaBtnOne.slds-button.slds-truncate"
+            }
+        },
+        {
+            "name": "readMoreButton",
+            "type": [
+                "clickable"
+            ],
+            "selector": {
+                "css": "a.ctaBtnTwo.slds-button.slds-truncate"
+            }
+        },
+        {
+            "name": "fileList",
+            "type": "utam-playgroundapp/pageObjects/navigation/fileList",
+            "selector": {
+                "css": "div.forceContentFileList.forceRecordLayout"
+            }
+        },
+        {
+            "name": "showMoreButton",
+            "type": [
+                "clickable"
+            ],
+            "selector": {
+                "css": "div.uiPopupTrigger a.menuButton"
+            }
+        },
+        {
+            "name": "dropDownMenu",
+            "type": "utam-playgroundapp/pageObjects/navigation/dropDownMenu",
+            "public": true,
+            "selector": {
+                "css": "div.slds-dropdown_right ul.scrollable"
+            }
+        },
+        {
+            "name": "component",
+            "type": "container",
+            "public": true,
+            "selector": {
+                "css": "%s",
+                "args": [
+                    {
+                        "name": "tagName",
+                        "type": "string"
+                    }
+                ]
+            }
+        }
+    ]
+}

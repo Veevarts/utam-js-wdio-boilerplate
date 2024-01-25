@@ -1,0 +1,20 @@
+{
+    "description": {
+        "author": "Salesforce",
+        "text": [
+            "Represents the list of actions once the action tray is expanded."
+        ]
+    },
+    "interface": true,
+    "methods": [
+        {
+            "name": "selectActionByName",
+            "args": [
+                {
+                    "name": "actionName",
+                    "type": "string"
+                }
+            ]
+        }
+    ]
+}

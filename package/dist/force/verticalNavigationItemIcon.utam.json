@@ -1,0 +1,38 @@
+{
+    "description": {
+        "author": "Salesforce",
+        "text": [
+            "Selector: lightning-vertical-navigation-item-icon.",
+            "Represents the lightning-vertical-navigation-item-icon Lightning web component.",
+            "Get the item link by text."
+        ]
+    },
+    "shadow": {
+        "elements": [
+            {
+                "name": "navigationItemLink",
+                "type": [
+                    "clickable"
+                ],
+                "public": true,
+                "selector": {
+                    "css": "a[class*='slds-nav-vertical']",
+                    "returnAll": true
+                },
+                "filter": {
+                    "apply": "getText",
+                    "findFirst": true,
+                    "matcher": {
+                        "type": "stringContains",
+                        "args": [
+                            {
+                                "name": "text",
+                                "type": "string"
+                            }
+                        ]
+                    }
+                }
+            }
+        ]
+    }
+}

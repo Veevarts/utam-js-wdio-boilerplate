@@ -1,0 +1,24 @@
+{
+    "description": {
+        "text": [
+            "Selector: .oneWorkspace.",
+            "Represents the one:workspace Aura component.",
+            "Access the console tabset."
+        ],
+        "author": "Salesforce"
+    },
+    "selector": {
+        "css": ".oneWorkspace.active"
+    },
+    "root": true,
+    "elements": [
+        {
+            "name": "tabset",
+            "type": "utam-global/pageObjects/consoleTabset",
+            "selector": {
+                "css": ".oneConsoleTabset"
+            },
+            "public": true
+        }
+    ]
+}

@@ -1,0 +1,100 @@
+{
+    "description": {
+        "author": "Salesforce",
+        "text": [
+            "Selector: resourceId(\"com.mysalesforce.mycommunity.playgroundcommunity:id/playgroundCommunitySelection\")",
+            "Represents the Android 'Add Community URL' screen.",
+            "Add a community url, toggle whether your site ends in '/s/'."
+        ]
+    },
+    "implements": "utam-playgroundapp/pageObjects/authentication/addCommunity",
+    "platform": "native",
+    "profile": [
+        {
+            "platform": [
+                "android_phone"
+            ]
+        }
+    ],
+    "root": true,
+    "selector": {
+        "uiautomator": "resourceId(\"com.mysalesforce.mycommunity.playgroundcommunity:id/playgroundCommunitySelection\")"
+    },
+    "exposeRootElement": true,
+    "type": [
+        "actionable",
+        "touchable"
+    ],
+    "methods": [
+        {
+            "name": "addCommunityUrl",
+            "compose": [
+                {
+                    "element": "communityUrl",
+                    "apply": "clearAndType",
+                    "args": [
+                        {
+                            "name": "url",
+                            "type": "string"
+                        }
+                    ]
+                },
+                {
+                    "element": "continueButton",
+                    "apply": "click"
+                }
+            ]
+        },
+        {
+            "name": "waitAddCommunityDisappear",
+            "compose": [
+                {
+                    "element": "communityUrl",
+                    "apply": "waitForAbsence"
+                }
+            ]
+        },
+        {
+            "name": "toggleSlashS",
+            "compose": [
+                {
+                    "element": "slashSButton",
+                    "apply": "click"
+                }
+            ]
+        }
+    ],
+    "elements": [
+        {
+            "name": "communityUrl",
+            "type": [
+                "editable",
+                "clickable"
+            ],
+            "selector": {
+                "uiautomator": "className(\"android.widget.EditText\")"
+            }
+        },
+        {
+            "name": "continueButton",
+            "type": [
+                "clickable",
+                "actionable"
+            ],
+            "selector": {
+                "uiautomator": "new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView(resourceId(\"com.mysalesforce.mycommunity.playgroundcommunity:id/launchCommunityButton\"))"
+            },
+            "public": true,
+            "nullable": true
+        },
+        {
+            "name": "slashSButton",
+            "type": [
+                "clickable"
+            ],
+            "selector": {
+                "uiautomator": "resourceIdMatches(\".*containsSlashS\")"
+            }
+        }
+    ]
+}

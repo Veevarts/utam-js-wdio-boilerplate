@@ -1,0 +1,54 @@
+{
+    "description": {
+        "author": "Salesforce",
+        "text": [
+            "Represents the Blog Post.",
+            "Click 'Read More' or get title for the blog post."
+        ]
+    },
+    "methods": [
+        {
+            "name": "clickReadMore",
+            "compose": [
+                {
+                    "element": "readMoreButton",
+                    "apply": "scrollToCenter"
+                },
+                {
+                    "element": "readMoreButton",
+                    "apply": "click"
+                }
+            ]
+        },
+        {
+            "name": "getTitleText",
+            "compose": [
+                {
+                    "element": "title",
+                    "apply": "getText"
+                }
+            ]
+        }
+    ],
+    "elements": [
+        {
+            "name": "readMoreButton",
+            "type": [
+                "clickable",
+                "actionable"
+            ],
+            "selector": {
+                "css": "button.js-content-navButton"
+            }
+        },
+        {
+            "name": "title",
+            "type": [
+                "actionable"
+            ],
+            "selector": {
+                "css": "p.js-content-title.layout_title.slds-text-heading_medium span"
+            }
+        }
+    ]
+}

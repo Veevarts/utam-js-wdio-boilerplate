@@ -1,0 +1,186 @@
+{
+    "description": {
+        "author": "Salesforce",
+        "text": [
+            "Represents the list view settings modal overlay container"
+        ]
+    },
+    "root": true,
+    "selector": {
+        "css": "body lightning-overlay-container"
+    },
+    "beforeLoad": [
+        {
+            "apply": "waitFor",
+            "args": [
+                {
+                    "type": "function",
+                    "predicate": [
+                        {
+                            "element": "root",
+                            "apply": "isPresent"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "shadow": {
+        "elements": [
+            {
+                "name": "modalBase",
+                "selector": {
+                    "css": "lightning-modal-base"
+                },
+                "type": "utam-lightning/pageObjects/modal",
+                "public": true
+            }
+        ]
+    },
+    "methods": [
+        {
+            "description": "Gets the modal header",
+            "name": "getHeader",
+            "compose": [
+                {
+                    "element": "modalBase"
+                },
+                {
+                    "chain": true,
+                    "apply": "getHeader",
+                    "returnType": "utam-lightning/pageObjects/modalHeader"
+                }
+            ]
+        },
+        {
+            "description": "Gets the modal body specific to the list view settings",
+            "name": "getBody",
+            "compose": [
+                {
+                    "element": "modalBase"
+                },
+                {
+                    "chain": true,
+                    "apply": "getBody",
+                    "returnType": "utam-lightning/pageObjects/modalBody"
+                },
+                {
+                    "chain": true,
+                    "apply": "getBodyContent",
+                    "returnType": "utam-lists/pageObjects/listViewManagerSettingsModalBody",
+                    "args": [
+                        {
+                            "value": "div.auraWrapper"
+                        },
+                        {
+                            "type": "pageObject",
+                            "value": "utam-lists/pageObjects/listViewManagerSettingsModalBody"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "Gets the confirmation button to save or delete the list view settings",
+            "name": "getDeleteOrSaveButton",
+            "compose": [
+                {
+                    "element": "modalBase"
+                },
+                {
+                    "chain": true,
+                    "apply": "getFooter",
+                    "returnType": "utam-lightning/pageObjects/modalFooter"
+                },
+                {
+                    "chain": true,
+                    "apply": "getFooterContent",
+                    "returnType": "utam-lightning/pageObjects/button",
+                    "args": [
+                        {
+                            "value": "lightning-button.test-confirmButton"
+                        },
+                        {
+                            "type": "pageObject",
+                            "value": "utam-lightning/pageObjects/button"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "Gets the cancel button to cancel edits to the list view settings",
+            "name": "getCancelButton",
+            "compose": [
+                {
+                    "element": "modalBase"
+                },
+                {
+                    "chain": true,
+                    "apply": "getFooter",
+                    "returnType": "utam-lightning/pageObjects/modalFooter"
+                },
+                {
+                    "chain": true,
+                    "apply": "getFooterContent",
+                    "returnType": "utam-lightning/pageObjects/button",
+                    "args": [
+                        {
+                            "value": "lightning-button.test-cancelButton"
+                        },
+                        {
+                            "type": "pageObject",
+                            "value": "utam-lightning/pageObjects/button"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": {
+                "text": [
+                    "Clicks the confirm button to save edits to or to delete the list ",
+                    "view settings and waits for the modal to disappear"
+                ]
+            },
+            "name": "clickConfirm",
+            "compose": [
+                {
+                    "apply": "getDeleteOrSaveButton",
+                    "returnType": "utam-lightning/pageObjects/button"
+                },
+                {
+                    "chain": true,
+                    "apply": "click"
+                },
+                {
+                    "element": "modalBase",
+                    "apply": "waitForAbsence"
+                }
+            ]
+        },
+        {
+            "description": {
+                "text": [
+                    "Clicks the cancel button to cancel edits to the list ",
+                    "view settings and waits for the modal to disappear"
+                ]
+            },
+            "name": "clickCancel",
+            "compose": [
+                {
+                    "apply": "getCancelButton",
+                    "returnType": "utam-lightning/pageObjects/button"
+                },
+                {
+                    "chain": true,
+                    "apply": "click"
+                },
+                {
+                    "element": "modalBase",
+                    "apply": "waitForAbsence"
+                }
+            ]
+        }
+    ]
+}

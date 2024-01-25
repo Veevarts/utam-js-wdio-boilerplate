@@ -1,0 +1,39 @@
+{
+    "description": {
+        "author": "Salesforce",
+        "text": [
+            "Represents 'Add Community URL' screen.",
+            "Add a community url, toggle whether your site ends in."
+        ]
+    },
+    "interface": true,
+    "root": true,
+    "exposeRootElement": true,
+    "type": [
+        "actionable",
+        "touchable"
+    ],
+    "methods": [
+        {
+            "name": "addCommunityUrl",
+            "args": [
+                {
+                    "name": "url",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "waitAddCommunityDisappear"
+        },
+        {
+            "name": "getContinueButton",
+            "returnType": [
+                "clickable"
+            ]
+        },
+        {
+            "name": "toggleSlashS"
+        }
+    ]
+}

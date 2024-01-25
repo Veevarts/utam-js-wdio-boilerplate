@@ -1,0 +1,51 @@
+{
+    "description": {
+        "author": "Salesforce",
+        "text": [
+            "Selector: **/XCUIElementTypeTable.",
+            "Represents the iOS Context Menu.",
+            "Click on an item in the Menu."
+        ]
+    },
+    "implements": "utam-playgroundapp/pageObjects/navigation/contextMenu",
+    "root": true,
+    "platform": "native",
+    "profile": [
+        {
+            "platform": [
+                "ios_phone"
+            ]
+        }
+    ],
+    "selector": {
+        "classchain": "**/XCUIElementTypeTable"
+    },
+    "methods": [
+        {
+            "name": "clickItemWithId",
+            "compose": [
+                {
+                    "element": "menuItem",
+                    "apply": "click"
+                }
+            ]
+        }
+    ],
+    "elements": [
+        {
+            "name": "menuItem",
+            "type": [
+                "clickable"
+            ],
+            "selector": {
+                "classchain": "**/XCUIElementTypeStaticText[`label == '%s'`]",
+                "args": [
+                    {
+                        "name": "label",
+                        "type": "string"
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,46 @@
+{
+    "description": {
+        "author": "Salesforce",
+        "text": [
+            "Selector: Toolbar.",
+            "Represents the toolbar in the iOS EULA view controller.",
+            "Accept the terms."
+        ]
+    },
+    "implements": "utam-salesforceapp/pageObjects/authentication/eula",
+    "platform": "native",
+    "profile": [
+        {
+            "platform": [
+                "ios_phone",
+                "ios_tablet"
+            ]
+        }
+    ],
+    "root": true,
+    "selector": {
+        "accessid": "Toolbar"
+    },
+    "methods": [
+        {
+            "name": "accept",
+            "compose": [
+                {
+                    "element": "iaccept",
+                    "apply": "click"
+                }
+            ]
+        }
+    ],
+    "elements": [
+        {
+            "type": [
+                "clickable"
+            ],
+            "name": "iaccept",
+            "selector": {
+                "accessid": "EULA.agree"
+            }
+        }
+    ]
+}

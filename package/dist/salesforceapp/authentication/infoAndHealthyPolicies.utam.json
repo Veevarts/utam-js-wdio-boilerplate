@@ -1,0 +1,11 @@
+{
+    "description": {
+        "author": "Salesforce",
+        "text": [
+            "Represents the title text view in the 'Info and Healthy Policies' fragment.",
+            "Verify page load"
+        ]
+    },
+    "interface": true,
+    "root": true
+}

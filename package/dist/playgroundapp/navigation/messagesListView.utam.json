@@ -1,0 +1,85 @@
+{
+    "description": {
+        "author": "Salesforce",
+        "text": [
+            "Selector: .forceChatterMessagesListView.",
+            "Represents Messages List View."
+        ]
+    },
+    "root": true,
+    "beforeLoad": [
+        {
+            "apply": "waitFor",
+            "args": [
+                {
+                    "type": "function",
+                    "predicate": [
+                        {
+                            "element": "root",
+                            "apply": "isPresent"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "selector": {
+        "css": ".forceChatterMessagesListView"
+    },
+    "methods": [
+        {
+            "name": "newMessage",
+            "description": "Click on new message button",
+            "compose": [
+                {
+                    "element": "newMessageBtn",
+                    "apply": "click"
+                }
+            ]
+        }
+    ],
+    "elements": [
+        {
+            "name": "newMessageBtn",
+            "type": [
+                "clickable"
+            ],
+            "selector": {
+                "css": "button.newMessageButton"
+            }
+        },
+        {
+            "name": "messages",
+            "public": true,
+            "type": [
+                "clickable"
+            ],
+            "selector": {
+                "css": ".forceChatterMessageSummary",
+                "returnAll": true
+            }
+        },
+        {
+            "name": "messageBySubject",
+            "type": "clickable",
+            "public": true,
+            "selector": {
+                "css": ".forceChatterMessageSummary .subject",
+                "returnAll": true
+            },
+            "filter": {
+                "apply": "getText",
+                "findFirst": true,
+                "matcher": {
+                    "type": "stringContains",
+                    "args": [
+                        {
+                            "name": "text",
+                            "type": "string"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

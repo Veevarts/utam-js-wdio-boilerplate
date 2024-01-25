@@ -1,0 +1,58 @@
+{
+    "description": {
+        "author": "Salesforce",
+        "text": [
+            "Selector: lightning-dynamic-icon.",
+            "Represents the lightning:dynamicIcon Lightning web component.",
+            "Get assistive text or get a class attribute."
+        ]
+    },
+    "methods": [
+        {
+            "name": "getIconClassAttr",
+            "description": {
+                "text": [
+                    "Get dynamic icon class name"
+                ],
+                "return": "string"
+            },
+            "compose": [
+                {
+                    "element": "icon",
+                    "apply": "getClassAttribute"
+                }
+            ]
+        },
+        {
+            "name": "getAssistiveText",
+            "description": {
+                "text": [
+                    "Get icon assistive text"
+                ],
+                "return": "string"
+            },
+            "compose": [
+                {
+                    "element": "assistiveTxt",
+                    "apply": "getText"
+                }
+            ]
+        }
+    ],
+    "shadow": {
+        "elements": [
+            {
+                "name": "icon",
+                "selector": {
+                    "css": "[class*='slds-icon']"
+                }
+            },
+            {
+                "name": "assistiveTxt",
+                "selector": {
+                    "css": ".slds-assistive-text"
+                }
+            }
+        ]
+    }
+}

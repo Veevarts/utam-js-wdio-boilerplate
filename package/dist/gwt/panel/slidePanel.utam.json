@@ -1,0 +1,23 @@
+{
+    "description": {
+        "text": [
+            "Selector: section.stage.panelSlide.",
+            "Represents the panelSlide native component.",
+            "Get the text label element."
+        ],
+        "author": "Salesforce"
+    },
+    "root": true,
+    "selector": {
+        "css": "section.stage.panelSlide"
+    },
+    "elements": [
+        {
+            "name": "textLabel",
+            "selector": {
+                "css": "div.windowViewMode-normal.active"
+            },
+            "public": true
+        }
+    ]
+}

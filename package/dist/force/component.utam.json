@@ -1,0 +1,106 @@
+{
+    "description": {
+        "author": "Salesforce",
+        "text": [
+            "Selector: section > div > builder_framework-component",
+            "Represents the component on flexipage",
+            "Returns inner child components such as description, time, url, inputSection"
+        ]
+    },
+    "shadow": {
+        "elements": [
+            {
+                "name": "xLazyTwo",
+                "selector": {
+                    "css": ".x-lazy"
+                },
+                "shadow": {
+                    "elements": [
+                        {
+                            "name": "xLazyThree",
+                            "selector": {
+                                "css": ".x-lazy"
+                            },
+                            "shadow": {
+                                "elements": [
+                                    {
+                                        "name": "innerFrameworkComponentInner",
+                                        "selector": {
+                                            "css": "div > builder_framework-component"
+                                        },
+                                        "shadow": {
+                                            "elements": [
+                                                {
+                                                    "name": "xLazyFour",
+                                                    "selector": {
+                                                        "css": ".x-lazy"
+                                                    },
+                                                    "shadow": {
+                                                        "elements": [
+                                                            {
+                                                                "name": "description",
+                                                                "selector": {
+                                                                    "css": "lightning-textarea"
+                                                                },
+                                                                "public": true,
+                                                                "type": "utam-lightning/pageObjects/textarea"
+                                                            },
+                                                            {
+                                                                "name": "time",
+                                                                "selector": {
+                                                                    "css": "lightning-input.slds-form-element"
+                                                                },
+                                                                "public": true,
+                                                                "type": "utam-lightning/pageObjects/input"
+                                                            },
+                                                            {
+                                                                "name": "url",
+                                                                "selector": {
+                                                                    "css": "lightning-input.slds-form-element"
+                                                                },
+                                                                "public": true,
+                                                                "type": "utam-lightning/pageObjects/input"
+                                                            },
+                                                            {
+                                                                "name": "inputSection",
+                                                                "selector": {
+                                                                    "css": "runtime_thp_cms-input-section"
+                                                                },
+                                                                "shadow": {
+                                                                    "elements": [
+                                                                        {
+                                                                            "name": "keyConcept",
+                                                                            "selector": {
+                                                                                "css": "lightning-input"
+                                                                            },
+                                                                            "public": true,
+                                                                            "type": "utam-lightning/pageObjects/input"
+                                                                        },
+                                                                        {
+                                                                            "name": "lessonSectionText",
+                                                                            "selector": {
+                                                                                "css": "div.ql-editor.ql-blank"
+                                                                            },
+                                                                            "public": true,
+                                                                            "type": [
+                                                                                "editable"
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,33 @@
+{
+    "description": {
+        "author": "Salesforce",
+        "text": [
+            "Selector: .forceRelatedList.",
+            "Represents the force:relatedList Aura component.",
+            "Get the force:listRecord or listTitleContainer components."
+        ]
+    },
+    "selector": {
+        "css": ".forceRelatedList:not(.uiAbstractList)"
+    },
+    "root": true,
+    "elements": [
+        {
+            "type": "utam-force/pageObjects/listRecord",
+            "name": "relatedList",
+            "public": true,
+            "selector": {
+                "css": ".listContent .forceListRecord",
+                "returnAll": true
+            }
+        },
+        {
+            "name": "header",
+            "public": true,
+            "type": "utam-lists/pageObjects/titleContainer",
+            "selector": {
+                "css": ".listTitleContainer"
+            }
+        }
+    ]
+}

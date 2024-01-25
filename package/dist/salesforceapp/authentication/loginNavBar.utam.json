@@ -1,0 +1,16 @@
+{
+    "description": {
+        "author": "Salesforce",
+        "text": [
+            "Represents the action bar in the login activity.",
+            "Load the screen to create or choose a different connection."
+        ]
+    },
+    "root": true,
+    "interface": true,
+    "methods": [
+        {
+            "name": "chooseConnOption"
+        }
+    ]
+}

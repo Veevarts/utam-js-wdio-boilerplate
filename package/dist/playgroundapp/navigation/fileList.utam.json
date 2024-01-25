@@ -1,0 +1,79 @@
+{
+    "description": {
+        "author": "Salesforce",
+        "text": [
+            "Represents a list of files.",
+            "Click on a file with title."
+        ]
+    },
+    "type": [
+        "actionable"
+    ],
+    "beforeLoad": [
+        {
+            "apply": "waitFor",
+            "args": [
+                {
+                    "type": "function",
+                    "predicate": [
+                        {
+                            "element": "root",
+                            "apply": "scrollToTop"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "element": "document",
+            "apply": "waitForDocumentReady"
+        }
+    ],
+    "methods": [
+        {
+            "name": "clickFileWithTitle",
+            "compose": [
+                {
+                    "apply": "waitFor",
+                    "args": [
+                        {
+                            "type": "function",
+                            "predicate": [
+                                {
+                                    "element": "fileWithTitle",
+                                    "apply": "click"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "elements": [
+        {
+            "name": "fileWithTitle",
+            "type": [
+                "clickable"
+            ],
+            "selector": {
+                "css": "li a[title='%s']",
+                "args": [
+                    {
+                        "name": "item",
+                        "type": "string"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "files",
+            "type": "utam-playgroundapp/pageObjects/navigation/file",
+            "public": true,
+            "selector": {
+                "css": "li",
+                "returnAll": true
+            }
+        }
+    ]
+}

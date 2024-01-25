@@ -1,0 +1,95 @@
+{
+    "description": {
+        "author": "Salesforce",
+        "text": [
+            "Selector: div#main.",
+            "Represents login page.",
+            "Enter credentials and login."
+        ]
+    },
+    "selector": {
+        "css": "div#main"
+    },
+    "root": true,
+    "methods": [
+        {
+            "name": "login",
+            "compose": [
+                {
+                    "element": "userName",
+                    "apply": "waitForVisible"
+                },
+                {
+                    "element": "userName",
+                    "apply": "setText",
+                    "args": [
+                        {
+                            "name": "userNameStr",
+                            "type": "string"
+                        }
+                    ]
+                },
+                {
+                    "element": "password",
+                    "apply": "waitForVisible"
+                },
+                {
+                    "element": "password",
+                    "apply": "setText",
+                    "args": [
+                        {
+                            "name": "passwordStr",
+                            "type": "string"
+                        }
+                    ]
+                },
+                {
+                    "element": "submitBtn",
+                    "apply": "click"
+                }
+            ]
+        }
+    ],
+    "elements": [
+        {
+            "name": "userName",
+            "public": true,
+            "type": [
+                "editable",
+                "clickable"
+            ],
+            "selector": {
+                "css": "input[type='email']"
+            }
+        },
+        {
+            "name": "password",
+            "public": true,
+            "type": [
+                "editable",
+                "clickable"
+            ],
+            "selector": {
+                "css": "input[type='password']"
+            }
+        },
+        {
+            "name": "submitBtn",
+            "public": true,
+            "type": [
+                "clickable"
+            ],
+            "selector": {
+                "css": "input[type='submit']"
+            }
+        },
+        {
+            "name": "socialLoginContainer",
+            "type": "utam-playgroundapp/pageObjects/authentication/socialLoginContainer",
+            "selector": {
+                "css": "div#idp_section_buttons"
+            },
+            "public": true
+        }
+    ]
+}

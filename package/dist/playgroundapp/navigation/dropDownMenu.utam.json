@@ -1,0 +1,35 @@
+{
+    "description": {
+        "author": "Salesforce",
+        "text": [
+            "Represents the Download Dropdown Menu.",
+            "Click the 'Download' button in the Dropdowwn Menu."
+        ]
+    },
+    "methods": [
+        {
+            "name": "clickDownloadButton",
+            "compose": [
+                {
+                    "element": "downloadButton",
+                    "apply": "waitForVisible"
+                },
+                {
+                    "element": "downloadButton",
+                    "apply": "click"
+                }
+            ]
+        }
+    ],
+    "elements": [
+        {
+            "name": "downloadButton",
+            "type": [
+                "clickable"
+            ],
+            "selector": {
+                "css": "button[title=\"Download\"]"
+            }
+        }
+    ]
+}

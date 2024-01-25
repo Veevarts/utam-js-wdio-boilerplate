@@ -1,0 +1,64 @@
+{
+    "description": {
+        "author": "Salesforce",
+        "text": [
+            "Selector: div#content.",
+            "Represents Oauth screen to allow access and manage data for the user.",
+            "Choose 'Allow' or 'Deny' access and manage data for the user."
+        ]
+    },
+    "root": true,
+    "selector": {
+        "css": "div#content"
+    },
+    "methods": [
+        {
+            "name": "clickAllow",
+            "compose": [
+                {
+                    "element": "allow",
+                    "apply": "scrollToCenter"
+                },
+                {
+                    "element": "allow",
+                    "apply": "click"
+                }
+            ]
+        },
+        {
+            "name": "clickDeny",
+            "compose": [
+                {
+                    "element": "deny",
+                    "apply": "scrollToCenter"
+                },
+                {
+                    "element": "deny",
+                    "apply": "click"
+                }
+            ]
+        }
+    ],
+    "elements": [
+        {
+            "type": [
+                "clickable",
+                "actionable"
+            ],
+            "name": "allow",
+            "selector": {
+                "css": "input#oaapprove"
+            }
+        },
+        {
+            "type": [
+                "clickable",
+                "actionable"
+            ],
+            "name": "deny",
+            "selector": {
+                "css": "input#oadeny"
+            }
+        }
+    ]
+}

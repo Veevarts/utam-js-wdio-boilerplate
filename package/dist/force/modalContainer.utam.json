@@ -1,0 +1,159 @@
+{
+    "description": {
+        "author": "Salesforce",
+        "text": [
+            "Selector: .modal-container.slds-modal__container.",
+            "Represents the force:modal Aura component. Close the modal.",
+            "Get the modal header text or get the description."
+        ]
+    },
+    "root": true,
+    "selector": {
+        "css": "div.modal-container.slds-modal__container"
+    },
+    "elements": [
+        {
+            "name": "modalHeader",
+            "selector": {
+                "css": ".modal-header"
+            },
+            "public": true,
+            "elements": [
+                {
+                    "name": "headerContent",
+                    "type": "container",
+                    "selector": {
+                        "css": ":scope > *:first-child:not(h2)"
+                    },
+                    "public": true
+                },
+                {
+                    "name": "heading",
+                    "selector": {
+                        "css": "h2"
+                    }
+                },
+                {
+                    "name": "closeModel",
+                    "type": [
+                        "clickable"
+                    ],
+                    "selector": {
+                        "css": "button[class*='slds-modal__close']"
+                    }
+                },
+                {
+                    "name": "description",
+                    "selector": {
+                        "css": ".description"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "modalBody",
+            "selector": {
+                "css": ".modal-body"
+            },
+            "elements": [
+                {
+                    "name": "bodyContent",
+                    "type": "container",
+                    "selector": {
+                        "css": ":scope *"
+                    },
+                    "public": true
+                }
+            ]
+        },
+        {
+            "name": "modalFooter",
+            "type": "utam-force/pageObjects/modalFooter",
+            "public": true,
+            "selector": {
+                "css": ".modal-footer"
+            }
+        },
+        {
+            "name": "changeOwnerModal",
+            "type": "utam-force/pageObjects/changeOwnerContent",
+            "public": true,
+            "selector": {
+                "css": ".changeOwnerContentWrapper"
+            }
+        },
+        {
+            "name": "establishSchedulesModal",
+            "type": "utam-sfa/pageObjects/productScheduleEstablish",
+            "public": true,
+            "selector": {
+                "css": ".sfaProductScheduleEstablish"
+            }
+        },
+        {
+            "name": "choosePricebookModal",
+            "type": "utam-sfa/pageObjects/choosePricebook",
+            "public": true,
+            "selector": {
+                "css": ".sfaChoosePricebook"
+            }
+        },
+        {
+            "name": "manualSharingModal",
+            "type": "utam-force/pageObjects/manualSharingContent",
+            "public": true,
+            "selector": {
+                "css": ".recordsRecordShare.shareModalContent"
+            }
+        },
+        {
+            "name": "applicationErrorModal",
+            "public": true,
+            "selector": {
+                "css": ".oneApplicationError"
+            }
+        }
+    ],
+    "methods": [
+        {
+            "name": "getHeaderText",
+            "description": {
+                "text": [
+                    "Get modal container header text"
+                ],
+                "return": "string"
+            },
+            "compose": [
+                {
+                    "element": "heading",
+                    "apply": "getText"
+                }
+            ]
+        },
+        {
+            "name": "close",
+            "description": "Click to close modal container header text",
+            "compose": [
+                {
+                    "element": "closeModel",
+                    "apply": "click"
+                }
+            ]
+        },
+        {
+            "name": "getDescription",
+            "description": {
+                "text": [
+                    "Get modal container description text"
+                ],
+                "return": "string"
+            },
+            "compose": [
+                {
+                    "element": "description",
+                    "apply": "getText"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+{
+    "description": {
+        "author": "Salesforce",
+        "text": [
+            "Selector: lst-list-view-picker.",
+            "Represents the list view picker Lightning web component.",
+            "Access the list view picker details"
+        ]
+    },
+    "shadow": {
+        "elements": [
+            {
+                "public": true,
+                "name": "pickerListViewName",
+                "selector": {
+                    "css": "span.slds-page-header__title"
+                }
+            },
+            {
+                "public": true,
+                "name": "popup",
+                "type": "utam-lightning/pageObjects/popup",
+                "selector": {
+                    "css": "lightning-popup"
+                }
+            }
+        ]
+    }
+}

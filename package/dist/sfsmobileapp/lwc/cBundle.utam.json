@@ -1,0 +1,34 @@
+{
+    "description": {
+        "author": "Salesforce",
+        "text": [
+            "Represents an LWC bundle usually loaded within an LwcMobileContainer context."
+        ]
+    },
+    "shadow": {
+        "elements": [
+            {
+                "name": "lightningCard",
+                "type": "utam-sfsmobileapp/pageObjects/lwc/lightningCard",
+                "public": true,
+                "selector": {
+                    "css": "lightning-card",
+                    "returnAll": true
+                },
+                "filter": {
+                    "apply": "getTitleText",
+                    "matcher": {
+                        "type": "stringEquals",
+                        "args": [
+                            {
+                                "name": "labelStr",
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    "findFirst": true
+                }
+            }
+        ]
+    }
+}

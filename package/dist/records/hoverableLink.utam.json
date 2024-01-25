@@ -1,0 +1,196 @@
+{
+    "description": {
+        "author": "Salesforce",
+        "text": [
+            "Selector: records-hoverable-link",
+            "Represents the records-hoverable-link Lightning web component.",
+            "Get link text or click the link. Check if the link isn't previewable. Get the link text when the link isn't previewable",
+            "Click the link when it's not previewable. Get the link text when the link isn't navigable. Hover over the link."
+        ]
+    },
+    "elements": [
+        {
+            "name": "textSpanInNestedSlots",
+            "nullable": true,
+            "type": [
+                "clickable",
+                "actionable"
+            ],
+            "selector": {
+                "css": "span"
+            }
+        }
+    ],
+    "shadow": {
+        "elements": [
+            {
+                "name": "link",
+                "type": [
+                    "clickable"
+                ],
+                "selector": {
+                    "css": "a"
+                }
+            },
+            {
+                "name": "buttonIcon",
+                "type": "utam-lightning/pageObjects/buttonIcon",
+                "public": true,
+                "selector": {
+                    "css": "lightning-button-icon"
+                }
+            },
+            {
+                "name": "textSpanInSlot",
+                "nullable": true,
+                "type": [
+                    "clickable"
+                ],
+                "selector": {
+                    "css": "a > slot > span"
+                }
+            }
+        ]
+    },
+    "methods": [
+        {
+            "description": {
+                "text": [
+                    "Click the link"
+                ],
+                "return": "none"
+            },
+            "name": "clickLink",
+            "compose": [
+                {
+                    "element": "link",
+                    "apply": "click"
+                }
+            ]
+        },
+        {
+            "description": {
+                "text": [
+                    "Get the link text"
+                ],
+                "return": "String value"
+            },
+            "name": "getLinkText",
+            "compose": [
+                {
+                    "element": "link",
+                    "apply": "getText"
+                }
+            ]
+        },
+        {
+            "description": {
+                "text": [
+                    "Check if the hoverable link is previewable"
+                ],
+                "return": "boolean value"
+            },
+            "name": "isNotPreviewable",
+            "compose": [
+                {
+                    "element": "root",
+                    "apply": "containsElement",
+                    "args": [
+                        {
+                            "type": "locator",
+                            "value": {
+                                "css": "span"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": {
+                "text": [
+                    "Get the link text when not previewable"
+                ],
+                "return": "String value"
+            },
+            "name": "getLinkTextWhenNotPreviewable",
+            "compose": [
+                {
+                    "element": "textSpanInNestedSlots",
+                    "apply": "getText"
+                }
+            ]
+        },
+        {
+            "description": {
+                "text": [
+                    "Click the link then not previewable"
+                ],
+                "return": "none"
+            },
+            "name": "clickLinkWhenNotPreviewable",
+            "compose": [
+                {
+                    "element": "textSpanInNestedSlots",
+                    "apply": "click"
+                }
+            ]
+        },
+        {
+            "description": {
+                "text": [
+                    "Check if the hoverable link is not navigable"
+                ],
+                "return": "boolean value"
+            },
+            "name": "isNotNavigable",
+            "compose": [
+                {
+                    "element": "root",
+                    "apply": "containsElement",
+                    "args": [
+                        {
+                            "type": "locator",
+                            "value": {
+                                "css": "a > slot > span"
+                            }
+                        },
+                        {
+                            "value": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": {
+                "text": [
+                    "Get the link text when not navigable"
+                ],
+                "return": "String value"
+            },
+            "name": "getLinkTextWhenNotNavigable",
+            "compose": [
+                {
+                    "element": "textSpanInSlot",
+                    "apply": "getText"
+                }
+            ]
+        },
+        {
+            "description": {
+                "text": [
+                    "Hover over the link"
+                ],
+                "return": "none"
+            },
+            "name": "hoverLink",
+            "compose": [
+                {
+                    "element": "textSpanInNestedSlots",
+                    "apply": "moveTo"
+                }
+            ]
+        }
+    ]
+}

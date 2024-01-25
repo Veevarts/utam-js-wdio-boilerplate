@@ -1,0 +1,86 @@
+{
+    "description": {
+        "author": "Salesforce",
+        "text": [
+            "Selector: resourceId(\"com.mysalesforce.mycommunity.playgroundcommunity:id/bottomNavigation\").",
+            "Represents the Android tab bar.",
+            "Check for a tab bar item and navigate to it."
+        ]
+    },
+    "implements": "utam-playgroundapp/pageObjects/navigation/navTabBar",
+    "root": true,
+    "platform": "native",
+    "profile": [
+        {
+            "platform": [
+                "android_phone"
+            ]
+        }
+    ],
+    "selector": {
+        "uiautomator": "resourceId(\"com.mysalesforce.mycommunity.playgroundcommunity:id/bottomNavigation\")"
+    },
+    "methods": [
+        {
+            "name": "clickTabBarItem",
+            "compose": [
+                {
+                    "element": "tabBarItem",
+                    "apply": "click"
+                }
+            ]
+        },
+        {
+            "name": "hasTabBarItem",
+            "compose": [
+                {
+                    "returnType": "boolean",
+                    "element": "root",
+                    "apply": "containsElement",
+                    "args": [
+                        {
+                            "type": "locator",
+                            "value": {
+                                "uiautomator": "className(\"android.widget.TextView\").text(\"%s\")",
+                                "args": [
+                                    {
+                                        "name": "item",
+                                        "type": "string"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "elements": [
+        {
+            "name": "tabBarItem",
+            "type": [
+                "clickable"
+            ],
+            "selector": {
+                "uiautomator": "className(\"android.widget.TextView\").text(\"%s\")",
+                "args": [
+                    {
+                        "name": "item",
+                        "type": "string"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "tabBarItems",
+            "type": [
+                "clickable"
+            ],
+            "public": true,
+            "selector": {
+                "uiautomator": "className(\"android.widget.TextView\").textMatches(\"[a-zA-Z0-9].+\")",
+                "returnAll": true
+            }
+        }
+    ]
+}

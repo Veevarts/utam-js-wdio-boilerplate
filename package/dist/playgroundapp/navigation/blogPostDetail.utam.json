@@ -1,0 +1,36 @@
+{
+    "description": {
+        "author": "Salesforce",
+        "text": [
+            "Selector: div.forceCommunityManagedContentDetail div.forceCommunityDetailLayoutWithSections.",
+            "Represents the details for a blog.",
+            "Get title for a blog."
+        ]
+    },
+    "root": true,
+    "selector": {
+        "css": "div.forceCommunityManagedContentDetail div.forceCommunityDetailLayoutWithSections"
+    },
+    "methods": [
+        {
+            "name": "getTitleText",
+            "compose": [
+                {
+                    "element": "title",
+                    "apply": "getText"
+                }
+            ]
+        }
+    ],
+    "elements": [
+        {
+            "name": "title",
+            "type": [
+                "actionable"
+            ],
+            "selector": {
+                "css": "div h3 span"
+            }
+        }
+    ]
+}

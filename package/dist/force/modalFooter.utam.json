@@ -1,0 +1,64 @@
+{
+    "description": {
+        "author": "Salesforce",
+        "text": [
+            "Selector: .modal-footer.slds-modal__footer.",
+            "Represents the force:modalFooter Aura component.",
+            "Get the force:button-group component or get the action button by name, and action button by index"
+        ]
+    },
+    "root": true,
+    "selector": {
+        "css": "div.modal-footer.slds-modal__footer"
+    },
+    "elements": [
+        {
+            "name": "forceButtonGroup",
+            "type": "utam-force/pageObjects/buttonGroup",
+            "public": true,
+            "selector": {
+                "css": "force-button-group"
+            }
+        },
+        {
+            "name": "modalActionButton",
+            "type": [
+                "clickable"
+            ],
+            "public": true,
+            "selector": {
+                "css": "button",
+                "returnAll": true
+            },
+            "filter": {
+                "apply": "getText",
+                "matcher": {
+                    "type": "stringContains",
+                    "args": [
+                        {
+                            "name": "buttonText",
+                            "type": "string"
+                        }
+                    ]
+                },
+                "findFirst": true
+            }
+        },
+        {
+            "name": "actionButtonByIndex",
+            "type": [
+                "clickable"
+            ],
+            "selector": {
+                "css": "button:nth-of-type(%d)",
+                "args": [
+                    {
+                        "name": "index",
+                        "type": "number"
+                    }
+                ]
+            },
+            "public": true
+        }
+    ]
+}

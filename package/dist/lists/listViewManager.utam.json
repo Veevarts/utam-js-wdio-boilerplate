@@ -1,0 +1,22 @@
+{
+    "description": {
+        "author": "Salesforce",
+        "text": [
+            "Selector: lst-list-view-manager.",
+            "Represents the list view manager LWC.",
+            "Access the common list internal component."
+        ]
+    },
+    "shadow": {
+        "elements": [
+            {
+                "name": "commonListInternal",
+                "type": "utam-lists/pageObjects/commonListInternal",
+                "public": true,
+                "selector": {
+                    "css": "lst-common-list-internal"
+                }
+            }
+        ]
+    }
+}

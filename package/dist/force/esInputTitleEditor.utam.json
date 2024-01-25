@@ -1,0 +1,22 @@
+{
+    "description": {
+        "author": "Salesforce",
+        "text": [
+            "Selector: es_block_builder-input-title-editor",
+            "Represents the es_block_builder-input-title-editor web component.",
+            "Access different fields in the  container modal."
+        ]
+    },
+    "shadow": {
+        "elements": [
+            {
+                "name": "LessonTitle",
+                "public": true,
+                "type": "utam-lightning/pageObjects/input",
+                "selector": {
+                    "css": "lightning-input"
+                }
+            }
+        ]
+    }
+}

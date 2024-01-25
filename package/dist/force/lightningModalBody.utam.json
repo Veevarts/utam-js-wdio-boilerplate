@@ -1,0 +1,101 @@
+{
+    "description": {
+        "author": "Salesforce",
+        "text": [
+            "Selector: force-lightning-modal-body.",
+            "Represents the force-lightning-modal-body Lightning web component.",
+            "Access different fields in the  container modal."
+        ]
+    },
+    "selector": {
+        "css": "lightning-modal-body"
+    },
+    "root": true,
+    "elements": [
+        {
+            "name": "mcontentFormEditor",
+            "selector": {
+                "css": "es_block_builder-mcontent-form-editor"
+            },
+            "shadow": {
+                "elements": [
+                    {
+                        "name": "mcontentEditorInputTitleEditor",
+                        "selector": {
+                            "css": "es_block_builder-input-title-editor"
+                        },
+                        "shadow": {
+                            "elements": [
+                                {
+                                    "name": "title",
+                                    "selector": {
+                                        "css": "lightning-input"
+                                    },
+                                    "public": true,
+                                    "type": "utam-lightning/pageObjects/input"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "schemaDrivenContentEditor",
+                        "selector": {
+                            "css": "es_block_builder-schema-driven-content-editor"
+                        },
+                        "shadow": {
+                            "elements": [
+                                {
+                                    "name": "propertySheetUi",
+                                    "selector": {
+                                        "css": "builder_framework-property-sheet-ui"
+                                    },
+                                    "shadow": {
+                                        "elements": [
+                                            {
+                                                "name": "frameworkComponent",
+                                                "selector": {
+                                                    "css": "builder_framework-component"
+                                                },
+                                                "shadow": {
+                                                    "elements": [
+                                                        {
+                                                            "name": "xLazyOne",
+                                                            "selector": {
+                                                                "css": ".x-lazy"
+                                                            },
+                                                            "shadow": {
+                                                                "elements": [
+                                                                    {
+                                                                        "name": "innerFrameworkComponent",
+                                                                        "selector": {
+                                                                            "css": "section > div > builder_framework-component",
+                                                                            "returnAll": true
+                                                                        },
+                                                                        "public": true,
+                                                                        "type": "utam-force/pageObjects/component"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "esMcontentFormEditor",
+            "selector": {
+                "css": "es_block_builder-mcontent-form-editor"
+            },
+            "public": true,
+            "type": "utam-force/pageObjects/esMcontentFormEditor"
+        }
+    ]
+}

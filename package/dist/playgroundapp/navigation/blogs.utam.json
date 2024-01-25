@@ -1,0 +1,47 @@
+{
+    "description": {
+        "author": "Salesforce",
+        "text": [
+            "Selector: body.comm-page-custom-all-blogs-final.",
+            "Represents the Blogs view."
+        ]
+    },
+    "root": true,
+    "selector": {
+        "css": "body.comm-page-custom-all-blogs-final"
+    },
+    "beforeLoad": [
+        {
+            "apply": "waitFor",
+            "args": [
+                {
+                    "type": "function",
+                    "predicate": [
+                        {
+                            "element": "root",
+                            "apply": "containsElement",
+                            "args": [
+                                {
+                                    "type": "locator",
+                                    "value": {
+                                        "css": "div.forceCommunityDynamicCollectionGrid"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "elements": [
+        {
+            "name": "blogPostCellList",
+            "type": "utam-playgroundapp/pageObjects/navigation/blogPostCellList",
+            "selector": {
+                "css": "div.forceCommunityDynamicCollectionGrid"
+            },
+            "public": true
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "description": {
+        "author": "Salesforce",
+        "text": [
+            "Selector: .runtime_pipeline_inspectorInspectionSidePanel.",
+            "Represents the pipeline Inspection Side Panel.",
+            "You can access elements and actions on Inspection Side Panel."
+        ]
+    },
+    "elements": [
+        {
+            "name": "closeButton",
+            "type": [
+                "clickable"
+            ],
+            "public": true,
+            "selector": {
+                "css": "runtime_pipeline_inspector-entity-navigable-url > div > lightning-button-icon > button"
+            }
+        }
+    ]
+}

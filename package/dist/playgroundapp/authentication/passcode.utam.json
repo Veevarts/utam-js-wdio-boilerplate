@@ -1,0 +1,22 @@
+{
+    "description": {
+        "author": "Salesforce",
+        "text": [
+            "Represents the Passcode screen.",
+            "Set passcode."
+        ]
+    },
+    "interface": true,
+    "root": true,
+    "methods": [
+        {
+            "name": "setPasscode",
+            "args": [
+                {
+                    "name": "passcode",
+                    "type": "string"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,169 @@
+{
+    "description": {
+        "author": "Salesforce",
+        "text": [
+            "Selector: .forceMobileOverlay.open.active[role='dialog'].",
+            "Represents Message Panel."
+        ]
+    },
+    "root": true,
+    "beforeLoad": [
+        {
+            "apply": "waitFor",
+            "args": [
+                {
+                    "type": "function",
+                    "predicate": [
+                        {
+                            "element": "root",
+                            "apply": "isPresent"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "selector": {
+        "css": ".forceMobileOverlay.open.active[role='dialog']"
+    },
+    "methods": [
+        {
+            "name": "select",
+            "compose": [
+                {
+                    "element": "inputTextForAutocomplete",
+                    "apply": "click"
+                }
+            ]
+        },
+        {
+            "name": "setRecipient",
+            "description": "Set text for the input field",
+            "compose": [
+                {
+                    "element": "toField",
+                    "apply": "setText",
+                    "args": [
+                        {
+                            "name": "text",
+                            "type": "string"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "setSubject",
+            "description": "Set text for the subject field",
+            "compose": [
+                {
+                    "element": "subject",
+                    "apply": "setText",
+                    "args": [
+                        {
+                            "name": "text",
+                            "type": "string"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "setMessage",
+            "description": "Set text for the message field",
+            "compose": [
+                {
+                    "element": "message",
+                    "apply": "setText",
+                    "args": [
+                        {
+                            "name": "text",
+                            "type": "string"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "sendMessage",
+            "description": "send message",
+            "compose": [
+                {
+                    "element": "sendBtn",
+                    "apply": "click"
+                }
+            ]
+        },
+        {
+            "name": "cancelMessage",
+            "description": "cancel message",
+            "compose": [
+                {
+                    "element": "cancelBtn",
+                    "apply": "click"
+                }
+            ]
+        }
+    ],
+    "elements": [
+        {
+            "name": "toField",
+            "type": [
+                "editable",
+                "clickable"
+            ],
+            "selector": {
+                "css": ".inputField[type='text']"
+            }
+        },
+        {
+            "name": "subject",
+            "type": [
+                "editable",
+                "clickable"
+            ],
+            "selector": {
+                "css": ".publisherInputSubject[type='text']"
+            }
+        },
+        {
+            "name": "message",
+            "type": [
+                "editable",
+                "clickable"
+            ],
+            "selector": {
+                "css": ".forceChatterMessageBodyInputRichTextEditor .slds-rich-text-editor__textarea .ql-editor"
+            }
+        },
+        {
+            "name": "inputTextForAutocomplete",
+            "public": true,
+            "type": [
+                "editable",
+                "clickable"
+            ],
+            "selector": {
+                "css": ".uiAutocompleteOption"
+            }
+        },
+        {
+            "name": "sendBtn",
+            "type": [
+                "clickable"
+            ],
+            "selector": {
+                "css": ".data-sendButton[type='button']"
+            }
+        },
+        {
+            "name": "cancelBtn",
+            "type": [
+                "clickable"
+            ],
+            "selector": {
+                "css": ".data-cancelButton[type='button']"
+            }
+        }
+    ]
+}

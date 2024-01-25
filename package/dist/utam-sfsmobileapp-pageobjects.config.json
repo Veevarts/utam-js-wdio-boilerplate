@@ -1,0 +1,158 @@
+{
+    "platform": {
+        "android_phone": [
+            {
+                "interface": "salesforce-pageobjects/sfsmobileapp/pageObjects/actionBar/actionTray",
+                "implementation": "salesforce-pageobjects/sfsmobileapp/pageObjects/actionBar/actionTrayAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/sfsmobileapp/pageObjects/actionBar/actionTrayRecords",
+                "implementation": "salesforce-pageobjects/sfsmobileapp/pageObjects/actionBar/actionTrayRecordsAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/sfsmobileapp/pageObjects/app/fieldServiceApp",
+                "implementation": "salesforce-pageobjects/sfsmobileapp/pageObjects/app/fieldServiceAppAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/sfsmobileapp/pageObjects/authentication/chooseConn",
+                "implementation": "salesforce-pageobjects/sfsmobileapp/pageObjects/authentication/ChooseConnAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/sfsmobileapp/pageObjects/authentication/addConn",
+                "implementation": "salesforce-pageobjects/sfsmobileapp/pageObjects/authentication/addConnAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/sfsmobileapp/pageObjects/authentication/loginNavBar",
+                "implementation": "salesforce-pageobjects/sfsmobileapp/pageObjects/authentication/loginNavBarAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/sfsmobileapp/pageObjects/authentication/loginNavBarOptions",
+                "implementation": "salesforce-pageobjects/sfsmobileapp/pageObjects/authentication/loginNavBarOptionsAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/sfsmobileapp/pageObjects/authentication/sfsEula",
+                "implementation": "salesforce-pageobjects/sfsmobileapp/pageObjects/authentication/sfsEulaAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/sfsmobileapp/pageObjects/deviceAlerts/deviceAlert",
+                "implementation": "salesforce-pageobjects/sfsmobileapp/pageObjects/deviceAlerts/deviceAlertAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/sfsmobileapp/pageObjects/deviceAlerts/deviceLocationAlert",
+                "implementation": "salesforce-pageobjects/sfsmobileapp/pageObjects/deviceAlerts/deviceLocationAlertAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/sfsmobileapp/pageObjects/permissions/shareLocation",
+                "implementation": "salesforce-pageobjects/sfsmobileapp/pageObjects/permissions/shareLocationAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/sfsmobileapp/pageObjects/record/assetServiceHistoryObject",
+                "implementation": "salesforce-pageobjects/sfsmobileapp/pageObjects/record/assetServiceHistoryObjectAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/sfsmobileapp/pageObjects/record/serviceAppointmentObject",
+                "implementation": "salesforce-pageobjects/sfsmobileapp/pageObjects/record/serviceAppointmentObjectAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/sfsmobileapp/pageObjects/record/workOrderObject",
+                "implementation": "salesforce-pageobjects/sfsmobileapp/pageObjects/record/workOrderObjectAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/sfsmobileapp/pageObjects/record/workOrderObjectOverview",
+                "implementation": "salesforce-pageobjects/sfsmobileapp/pageObjects/record/workOrderObjectOverviewAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/sfsmobileapp/pageObjects/sections/serviceReportSection",
+                "implementation": "salesforce-pageobjects/sfsmobileapp/pageObjects/sections/serviceReportSectionAndroid"
+            }
+        ],
+        "ios_phone": [
+            {
+                "interface": "salesforce-pageobjects/sfsmobileapp/pageObjects/actionBar/actionTrayRecords",
+                "implementation": "salesforce-pageobjects/sfsmobileapp/pageObjects/actionBar/actionTrayRecordsiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/sfsmobileapp/pageObjects/actionBar/actionTray",
+                "implementation": "salesforce-pageobjects/sfsmobileapp/pageObjects/actionBar/actionTrayiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/sfsmobileapp/pageObjects/app/fieldServiceApp",
+                "implementation": "salesforce-pageobjects/sfsmobileapp/pageObjects/app/fieldServiceAppiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/sfsmobileapp/pageObjects/authentication/addConn",
+                "implementation": "salesforce-pageobjects/sfsmobileapp/pageObjects/authentication/addConniOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/sfsmobileapp/pageObjects/authentication/chooseConn",
+                "implementation": "salesforce-pageobjects/sfsmobileapp/pageObjects/authentication/chooseConniOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/sfsmobileapp/pageObjects/authentication/getStarted",
+                "implementation": "salesforce-pageobjects/sfsmobileapp/pageObjects/authentication/getStartediOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/sfsmobileapp/pageObjects/authentication/loginButtonScreen",
+                "implementation": "salesforce-pageobjects/sfsmobileapp/pageObjects/authentication/loginButtonScreeniOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/sfsmobileapp/pageObjects/authentication/loginNavBar",
+                "implementation": "salesforce-pageobjects/sfsmobileapp/pageObjects/authentication/loginNavBariOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/sfsmobileapp/pageObjects/authentication/loginSlides",
+                "implementation": "salesforce-pageobjects/sfsmobileapp/pageObjects/authentication/loginSlidesiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/sfsmobileapp/pageObjects/authentication/sfsEula",
+                "implementation": "salesforce-pageobjects/sfsmobileapp/pageObjects/authentication/sfsEulaiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/sfsmobileapp/pageObjects/deviceAlerts/deviceAlert",
+                "implementation": "salesforce-pageobjects/sfsmobileapp/pageObjects/deviceAlerts/deviceAlertiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/sfsmobileapp/pageObjects/deviceAlerts/deviceLocationAlert",
+                "implementation": "salesforce-pageobjects/sfsmobileapp/pageObjects/deviceAlerts/deviceLocationAlertiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/sfsmobileapp/pageObjects/permissions/cameraAccess",
+                "implementation": "salesforce-pageobjects/sfsmobileapp/pageObjects/permissions/cameraAccessiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/sfsmobileapp/pageObjects/permissions/notifications",
+                "implementation": "salesforce-pageobjects/sfsmobileapp/pageObjects/permissions/notificationsiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/sfsmobileapp/pageObjects/permissions/shareLocation",
+                "implementation": "salesforce-pageobjects/sfsmobileapp/pageObjects/permissions/shareLocationiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/sfsmobileapp/pageObjects/record/assetServiceHistoryObject",
+                "implementation": "salesforce-pageobjects/sfsmobileapp/pageObjects/record/assetServiceHistoryObjectiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/sfsmobileapp/pageObjects/record/serviceAppointmentObject",
+                "implementation": "salesforce-pageobjects/sfsmobileapp/pageObjects/record/serviceAppointmentObjectiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/sfsmobileapp/pageObjects/record/workOrderObjectOverview",
+                "implementation": "salesforce-pageobjects/sfsmobileapp/pageObjects/record/workOrderObjectOverviewiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/sfsmobileapp/pageObjects/record/workOrderObject",
+                "implementation": "salesforce-pageobjects/sfsmobileapp/pageObjects/record/workOrderObjectiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/sfsmobileapp/pageObjects/sections/serviceReportSection",
+                "implementation": "salesforce-pageobjects/sfsmobileapp/pageObjects/sections/serviceReportSectioniOS"
+            }
+        ],
+        "android_tablet": [
+            {
+                "interface": "salesforce-pageobjects/sfsmobileapp/pageObjects/record/workOrderObject",
+                "implementation": "salesforce-pageobjects/sfsmobileapp/pageObjects/record/workOrderObjectAndroid"
+            }
+        ]
+    }
+}

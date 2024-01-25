@@ -1,0 +1,55 @@
+{
+    "description": {
+        "author": "Salesforce",
+        "text": [
+            "Represents Social Login Container.",
+            "Choose login type."
+        ]
+    },
+    "methods": [
+        {
+            "name": "chooseLoginType",
+            "compose": [
+                {
+                    "element": "loginButtonWithLabel",
+                    "apply": "waitForVisible"
+                },
+                {
+                    "element": "loginButtonWithLabel",
+                    "apply": "scrollToCenter"
+                },
+                {
+                    "element": "loginButtonWithLabel",
+                    "apply": "click"
+                }
+            ]
+        }
+    ],
+    "elements": [
+        {
+            "name": "loginButtonWithLabel",
+            "public": true,
+            "type": [
+                "clickable",
+                "actionable"
+            ],
+            "selector": {
+                "css": "button span",
+                "returnAll": true
+            },
+            "filter": {
+                "apply": "getText",
+                "findFirst": true,
+                "matcher": {
+                    "type": "stringContains",
+                    "args": [
+                        {
+                            "name": "label",
+                            "type": "string"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

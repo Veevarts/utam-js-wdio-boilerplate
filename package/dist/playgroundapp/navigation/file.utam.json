@@ -1,0 +1,31 @@
+{
+    "description": {
+        "author": "Salesforce",
+        "text": [
+            "Represents a File.",
+            "Click on the title of the File."
+        ]
+    },
+    "methods": [
+        {
+            "name": "clickTitle",
+            "compose": [
+                {
+                    "element": "title",
+                    "apply": "click"
+                }
+            ]
+        }
+    ],
+    "elements": [
+        {
+            "name": "title",
+            "type": [
+                "clickable"
+            ],
+            "selector": {
+                "css": "a"
+            }
+        }
+    ]
+}

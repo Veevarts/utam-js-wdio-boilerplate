@@ -1,0 +1,43 @@
+{
+    "description": {
+        "text": [
+            "Selector: builder_industries_interaction_rule-default-create-expression-set-modal",
+            "To create a new ExpressionSet"
+        ],
+        "author": "Salesforce"
+    },
+    "root": true,
+    "selector": {
+        "css": "builder_industries_interaction_rule-default-create-expression-set-modal"
+    },
+    "shadow": {
+        "elements": [
+            {
+                "name": "expressionSetName",
+                "type": "utam-lightning/pageObjects/input",
+                "public": true,
+                "selector": {
+                    "css": "lightning-input[data-id='expressionSetName']"
+                }
+            },
+            {
+                "name": "usageType",
+                "public": true,
+                "type": "utam-lightning/pageObjects/combobox",
+                "selector": {
+                    "css": "lightning-combobox[data-id='usageType']"
+                }
+            },
+            {
+                "name": "saveButton",
+                "public": true,
+                "type": [
+                    "clickable"
+                ],
+                "selector": {
+                    "css": "lightning-button[data-id='es-action-btn']"
+                }
+            }
+        ]
+    }
+}

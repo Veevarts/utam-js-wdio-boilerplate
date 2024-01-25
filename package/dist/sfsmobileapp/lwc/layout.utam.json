@@ -1,0 +1,48 @@
+{
+    "description": {
+        "author": "Salesforce",
+        "text": [
+            "Represents the layout usually within an LWC action."
+        ]
+    },
+    "exposeRootElement": true,
+    "type": [
+        "actionable"
+    ],
+    "elements": [
+        {
+            "name": "layoutItem",
+            "type": "utam-lightning/pageObjects/layoutItem",
+            "public": true,
+            "selector": {
+                "css": "lightning-layout-item:nth-child(%d)",
+                "args": [
+                    {
+                        "name": "index",
+                        "type": "number"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "layoutItems",
+            "type": "utam-lightning/pageObjects/layoutItem",
+            "public": true,
+            "selector": {
+                "css": "lightning-layout-item",
+                "returnAll": true
+            }
+        }
+    ],
+    "methods": [
+        {
+            "name": "scrollToCenter",
+            "compose": [
+                {
+                    "element": "root",
+                    "apply": "scrollToCenter"
+                }
+            ]
+        }
+    ]
+}

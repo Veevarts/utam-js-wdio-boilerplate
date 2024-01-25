@@ -1,0 +1,49 @@
+{
+    "selector": {
+        "css": ".onesetupSetupComponent"
+    },
+    "root": true,
+    "description": {
+        "author": "Salesforce",
+        "text": [
+            "Selector: .onesetupSetupComponent.",
+            "Represents the onesetup:setupComponent Aura component.",
+            "Access the setup header, setup aloha page, or slack user settings component."
+        ]
+    },
+    "elements": [
+        {
+            "name": "setupHeader",
+            "type": "utam-setup/pageObjects/setupHeader",
+            "selector": {
+                "css": ".onesetupSetupHeader"
+            },
+            "public": true
+        },
+        {
+            "name": "setupAlohaPage",
+            "type": "utam-setup/pageObjects/setupAlohaPage",
+            "selector": {
+                "css": ".onesetupSetupAlohaPage"
+            },
+            "public": true
+        },
+        {
+            "name": "component",
+            "type": "container",
+            "selector": {
+                "css": ".oneSlackUserSettings *"
+            },
+            "public": true
+        },
+        {
+            "name": "lightningSpinner",
+            "public": true,
+            "nullable": true,
+            "type": "utam-lightning/pageObjects/spinner",
+            "selector": {
+                "css": "lightning-spinner"
+            }
+        }
+    ]
+}

@@ -1,0 +1,1020 @@
+{
+    "platform": {
+        "android_phone": [
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/authentication/addConn",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/authentication/addConnAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/authentication/chooseConn",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/authentication/chooseConnAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/authentication/eula",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/authentication/eulaAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/authentication/infoAndHealthyPolicies",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/authentication/infoAndHealthyPoliciesAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/authentication/loginNavBar",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/authentication/loginNavBarAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/authentication/loginNavBarOptions",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/authentication/loginNavBarOptionsAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/authentication/mobileSecurity",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/authentication/mobileSecurityAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/chatter/chatterDetail",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/chatter/chatterDetailAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/chatter/chatterMain",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/chatter/chatterMainAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/chatter/chatterPostCell",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/chatter/chatterPostCellAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/chatter/postPublisher",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/chatter/postPublisherAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/mobilehome/addCardList",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/mobilehome/addCardListAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/mobilehome/editHome",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/mobilehome/editHomeAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/mobilehome/homeCardList",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/mobilehome/homeCardListAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/mobilehome/mobileHome",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/mobilehome/mobileHomeAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/allItemsNav",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/allItemsNavAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/appItemsList",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/appItemsListAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/appLauncherNav",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/appLauncherNavAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/globalSearch",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/globalSearchAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/navBar",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/navBarAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/navBarOverflowMenu",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/navBarOverflowMenuAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/navItemsList",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/navItemsListAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/navMenu",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/navMenuAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/navTabBar",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/navTabBarAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/profileMenuNav",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/profileMenuNavAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/reportHomeNavBar",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/reportHomeNavBarAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/searchBar",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/searchBarAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/appSwitchingFlash",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/appSwitchingFlashAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/briefcase",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/briefcaseAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/briefcaseSummary",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/briefcaseSummaryAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/draftList",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/draftListAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/draftRow",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/draftRowAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/draftSummary",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/draftSummaryAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/landingPageActionItem",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/landingPageActionItemAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/landingPageActionList",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/landingPageActionListAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/landingPageActionRow",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/landingPageActionRowAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/landingPage",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/landingPageAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/landingPageCard",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/landingPageCardAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/offlineNavBar",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/offlineNavBarAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/offlineObjectHome",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/offlineObjectHomeAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/offlineObjectList",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/offlineObjectListAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/offlineObjectRow",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/offlineObjectRowAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/offlineProfileMenu",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/offlineProfileMenuAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/offlineRecordList",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/offlineRecordListAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/offlineRecordRow",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/offlineRecordRowAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/offlineSearch",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/offlineSearchAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/record/actionBar",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/record/actionBarAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/record/actionBarOverflow",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/record/actionBarOverflowAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/record/analyticsBrowse",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/record/analyticsBrowseAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/record/analyticsDashboard",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/record/analyticsDashboardAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/record/analyticsHome",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/record/analyticsHomeAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/record/eventObjectHome",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/record/eventObjectHomeAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/record/favorite",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/record/favoriteAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/record/favoriteList",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/record/favoriteListAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/record/favoriteSearchBar",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/record/favoriteSearchBarAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/record/objectAllLists",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/record/objectAllListsAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/record/objectHome",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/record/objectHomeAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/record/objectHomeNoList",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/record/objectHomeNoListAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/record/recordTypePicker",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/record/recordTypePickerAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/record/reportCardSearchBar",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/record/reportCardSearchBarAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/record/reportHome",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/record/reportHomeAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/record/reportSummary",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/record/reportSummaryAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/record/reportTable",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/record/reportTableAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/record/searchResult",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/record/searchResultAndroid"
+            }
+        ],
+        "android_tablet": [
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/authentication/addConn",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/authentication/addConnAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/authentication/chooseConn",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/authentication/chooseConnAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/authentication/eula",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/authentication/eulaAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/authentication/infoAndHealthyPolicies",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/authentication/infoAndHealthyPoliciesAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/authentication/loginNavBar",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/authentication/loginNavBarAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/authentication/loginNavBarOptions",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/authentication/loginNavBarOptionsAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/authentication/mobileSecurity",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/authentication/mobileSecurityAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/chatter/chatterDetail",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/chatter/chatterDetailAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/chatter/chatterMain",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/chatter/chatterMainAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/chatter/chatterPostCell",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/chatter/chatterPostCellAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/chatter/postPublisher",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/chatter/postPublisherAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/mobilehome/addCardList",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/mobilehome/addCardListAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/mobilehome/editHome",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/mobilehome/editHomeAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/mobilehome/homeCardList",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/mobilehome/homeCardListAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/mobilehome/mobileHome",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/mobilehome/mobileHomeAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/allItemsNav",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/allItemsNavAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/appItemsList",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/appItemsListAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/appLauncherNav",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/appLauncherNavAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/globalSearch",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/globalSearchAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/navBar",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/navBarAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/navBarOverflowMenu",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/navBarOverflowMenuAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/navItemsList",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/navItemsListAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/navMenu",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/navMenuAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/navTabBar",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/navTabBarAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/profileMenuNav",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/profileMenuNavAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/reportHomeNavBar",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/reportHomeNavBarAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/searchBar",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/searchBarAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/appSwitchingFlash",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/appSwitchingFlashAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/briefcase",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/briefcaseAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/briefcaseSummary",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/briefcaseSummaryAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/draftList",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/draftListAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/draftRow",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/draftRowAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/draftSummary",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/draftSummaryAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/landingPageActionItem",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/landingPageActionItemAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/landingPageActionList",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/landingPageActionListAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/landingPageActionRow",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/landingPageActionRowAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/landingPage",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/landingPageAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/landingPageCard",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/landingPageCardAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/offlineNavBar",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/offlineNavBarAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/offlineObjectHome",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/offlineObjectHomeAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/offlineObjectList",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/offlineObjectListAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/offlineObjectRow",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/offlineObjectRowAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/offlineProfileMenu",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/offlineProfileMenuAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/offlineRecordList",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/offlineRecordListAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/offlineRecordRow",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/offlineRecordRowAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/offlineSearch",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/offlineSearchAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/record/actionBar",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/record/actionBarAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/record/actionBarOverflow",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/record/actionBarOverflowAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/record/analyticsBrowse",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/record/analyticsBrowseAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/record/analyticsDashboard",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/record/analyticsDashboardAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/record/analyticsHome",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/record/analyticsHomeAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/record/eventObjectHome",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/record/eventObjectHomeAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/record/favorite",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/record/favoriteAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/record/favoriteList",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/record/favoriteListAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/record/favoriteSearchBar",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/record/favoriteSearchBarAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/record/objectAllLists",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/record/objectAllListsAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/record/objectHome",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/record/objectHomeAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/record/objectHomeNoList",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/record/objectHomeNoListAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/record/recordTypePicker",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/record/recordTypePickerAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/record/reportCardSearchBar",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/record/reportCardSearchBarAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/record/reportHome",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/record/reportHomeAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/record/reportSummary",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/record/reportSummaryAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/record/reportTable",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/record/reportTableAndroid"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/record/searchResult",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/record/searchResultAndroid"
+            }
+        ],
+        "ios_phone": [
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/authentication/addConn",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/authentication/addConniOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/authentication/chooseConn",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/authentication/chooseConniOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/authentication/eula",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/authentication/eulaiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/authentication/infoAndHealthyPolicies",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/authentication/infoAndHealthyPoliciesiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/authentication/loginNavBar",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/authentication/loginNavBariOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/authentication/mobileSecurity",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/authentication/mobileSecurityiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/chatter/chatterDetail",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/chatter/chatterDetailiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/chatter/chatterMain",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/chatter/chatterMainiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/chatter/chatterPostCell",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/chatter/chatterPostCelliOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/chatter/postPublisher",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/chatter/postPublisheriOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/mobilehome/addCardList",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/mobilehome/addCardListiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/mobilehome/editHome",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/mobilehome/editHomeiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/mobilehome/homeCardList",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/mobilehome/homeCardListiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/mobilehome/mobileHome",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/mobilehome/mobileHomeiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/allItemsNav",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/allItemsNaviOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/appItemsList",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/appItemsListiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/appLauncherNav",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/appLauncherNaviOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/globalSearch",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/globalSearchiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/navBar",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/navBariOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/navItemsList",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/navItemsListiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/navMenu",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/navMenuiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/navTabBar",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/navTabBariOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/profileMenuNav",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/profileMenuNaviOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/reportHomeNavBar",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/reportHomeNavBariOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/searchBar",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/searchBariOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/appSwitchingFlash",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/appSwitchingFlashiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/briefcaseSummary",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/briefcaseSummaryiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/briefcase",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/briefcaseiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/draftList",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/draftListiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/draftRow",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/draftRowiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/draftSummary",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/draftSummaryiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/landingPageActionItem",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/landingPageActionItemiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/landingPageActionList",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/landingPageActionListiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/landingPageActionRow",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/landingPageActionRowiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/landingPageCard",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/landingPageCardiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/landingPage",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/landingPageiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/offlineNavBar",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/offlineNavBariOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/offlineObjectHome",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/offlineObjectHomeiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/offlineObjectList",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/offlineObjectListiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/offlineObjectRow",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/offlineObjectRowiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/offlineProfileMenu",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/offlineProfileMenuiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/offlineRecordList",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/offlineRecordListiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/offlineRecordRow",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/offlineRecordRowiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/offlineSearch",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/offlineSearchiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/record/actionBarOverflow",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/record/actionBarOverflowiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/record/actionBar",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/record/actionBariOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/record/analyticsBrowse",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/record/analyticsBrowseiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/record/analyticsDashboard",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/record/analyticsDashboardiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/record/analyticsHome",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/record/analyticsHomeiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/record/eventObjectHome",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/record/eventObjectHomeiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/record/favoriteList",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/record/favoriteListiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/record/favoriteSearchBar",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/record/favoriteSearchBariOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/record/favorite",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/record/favoriteiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/record/objectAllLists",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/record/objectAllListsiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/record/objectHomeNoList",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/record/objectHomeNoListiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/record/objectHome",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/record/objectHomeiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/record/recordTypePicker",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/record/recordTypePickeriPhone"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/record/reportCardSearchBar",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/record/reportCardSearchBariOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/record/reportHome",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/record/reportHomeiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/record/reportSummary",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/record/reportSummaryiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/record/reportTable",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/record/reportTableiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/record/searchResult",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/record/searchResultiOS"
+            }
+        ],
+        "ios_tablet": [
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/authentication/addConn",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/authentication/addConniOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/authentication/chooseConn",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/authentication/chooseConniOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/authentication/eula",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/authentication/eulaiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/authentication/infoAndHealthyPolicies",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/authentication/infoAndHealthyPoliciesiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/authentication/loginNavBar",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/authentication/loginNavBariOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/authentication/mobileSecurity",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/authentication/mobileSecurityiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/chatter/chatterDetail",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/chatter/chatterDetailiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/chatter/chatterMain",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/chatter/chatterMainiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/chatter/chatterPostCell",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/chatter/chatterPostCelliOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/chatter/postPublisher",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/chatter/postPublisheriOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/mobilehome/addCardList",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/mobilehome/addCardListiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/mobilehome/editHome",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/mobilehome/editHomeiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/mobilehome/homeCardList",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/mobilehome/homeCardListiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/mobilehome/mobileHome",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/mobilehome/mobileHomeiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/allItemsNav",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/allItemsNaviOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/appItemsList",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/appItemsListiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/appLauncherNav",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/appLauncherNaviOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/globalSearch",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/globalSearchiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/navBar",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/navBariOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/navItemsList",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/navItemsListiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/navMenu",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/navMenuiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/navTabBar",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/navTabBariOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/profileMenuNav",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/profileMenuNaviOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/reportHomeNavBar",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/reportHomeNavBariOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/searchBar",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/navigation/searchBariOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/appSwitchingFlash",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/appSwitchingFlashiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/briefcaseSummary",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/briefcaseSummaryiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/briefcase",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/briefcaseiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/draftList",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/draftListiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/draftRow",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/draftRowiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/draftSummary",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/draftSummaryiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/landingPageActionItem",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/landingPageActionItemiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/landingPageActionList",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/landingPageActionListiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/landingPageActionRow",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/landingPageActionRowiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/landingPageCard",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/landingPageCardiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/landingPage",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/landingPageiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/offlineNavBar",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/offlineNavBariOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/offlineObjectHome",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/offlineObjectHomeiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/offlineObjectList",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/offlineObjectListiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/offlineObjectRow",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/offlineObjectRowiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/offlineProfileMenu",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/offlineProfileMenuiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/offlineRecordList",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/offlineRecordListiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/offlineRecordRow",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/offlineRecordRowiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/offlineSearch",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/offlineapp/offlineSearchiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/record/actionBarOverflow",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/record/actionBarOverflowiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/record/actionBar",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/record/actionBariOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/record/analyticsBrowse",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/record/analyticsBrowseiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/record/analyticsDashboard",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/record/analyticsDashboardiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/record/analyticsHome",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/record/analyticsHomeiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/record/eventObjectHome",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/record/eventObjectHomeiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/record/favoriteList",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/record/favoriteListiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/record/favoriteSearchBar",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/record/favoriteSearchBariOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/record/favorite",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/record/favoriteiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/record/objectAllLists",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/record/objectAllListsiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/record/objectHomeNoList",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/record/objectHomeNoListiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/record/objectHome",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/record/objectHomeiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/record/recordTypePicker",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/record/recordTypePickeriPad"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/record/reportCardSearchBar",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/record/reportCardSearchBariOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/record/reportHome",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/record/reportHomeiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/record/reportSummary",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/record/reportSummaryiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/record/reportTable",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/record/reportTableiOS"
+            },
+            {
+                "interface": "salesforce-pageobjects/salesforceapp/pageObjects/record/searchResult",
+                "implementation": "salesforce-pageobjects/salesforceapp/pageObjects/record/searchResultiOS"
+            }
+        ]
+    }
+}

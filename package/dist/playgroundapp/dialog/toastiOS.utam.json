@@ -1,0 +1,69 @@
+{
+    "description": {
+        "author": "Salesforce",
+        "text": [
+            "Selector: **/XCUIElementTypeOther[$type == 'XCUIElementTypeStaticText' AND value CONTAINS 'Your app loaded successfully'$].",
+            "Represents the iOS toast view.",
+            "Click a button or get a message from the toast."
+        ]
+    },
+    "implements": "utam-playgroundapp/pageObjects/dialog/toast",
+    "root": true,
+    "platform": "native",
+    "profile": [
+        {
+            "platform": [
+                "ios_phone"
+            ]
+        }
+    ],
+    "selector": {
+        "classchain": "**/XCUIElementTypeOther[$type == 'XCUIElementTypeStaticText' AND value CONTAINS 'Your app loaded successfully'$]"
+    },
+    "methods": [
+        {
+            "name": "clickButton",
+            "compose": [
+                {
+                    "element": "button",
+                    "apply": "click"
+                }
+            ]
+        },
+        {
+            "name": "getMessage",
+            "compose": [
+                {
+                    "element": "message",
+                    "apply": "getText"
+                }
+            ]
+        }
+    ],
+    "elements": [
+        {
+            "name": "button",
+            "type": [
+                "clickable"
+            ],
+            "selector": {
+                "classchain": "**/XCUIElementTypeButton[`name == '%s'`]",
+                "args": [
+                    {
+                        "name": "label",
+                        "type": "string"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "message",
+            "selector": {
+                "classchain": "**/XCUIElementTypeStaticText[`name BEGINSWITH 'Your app '`]"
+            },
+            "type": [
+                "actionable"
+            ]
+        }
+    ]
+}

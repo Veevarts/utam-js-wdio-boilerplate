@@ -1,0 +1,26 @@
+{
+    "description": {
+        "author": "Salesforce",
+        "text": [
+            "Selector: lst-breadcrumbs.",
+            "Represents the Breadcrumbs on DRL.",
+            "Access links"
+        ]
+    },
+    "shadow": {
+        "elements": [
+            {
+                "type": [
+                    "clickable"
+                ],
+                "name": "links",
+                "public": true,
+                "selector": {
+                    "css": "a",
+                    "returnAll": true
+                },
+                "nullable": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,86 @@
+{
+    "description": {
+        "author": "Salesforce",
+        "text": [
+            "Selector: **/XCUIElementTypeTabBar.",
+            "Represents the iOS tab bar.",
+            "Check for a tab bar item and navigate to it."
+        ]
+    },
+    "implements": "utam-playgroundapp/pageObjects/navigation/navTabBar",
+    "root": true,
+    "platform": "native",
+    "profile": [
+        {
+            "platform": [
+                "ios_phone"
+            ]
+        }
+    ],
+    "selector": {
+        "classchain": "**/XCUIElementTypeTabBar"
+    },
+    "methods": [
+        {
+            "name": "clickTabBarItem",
+            "compose": [
+                {
+                    "element": "tabBarItem",
+                    "apply": "click"
+                }
+            ]
+        },
+        {
+            "name": "hasTabBarItem",
+            "compose": [
+                {
+                    "returnType": "boolean",
+                    "element": "root",
+                    "apply": "containsElement",
+                    "args": [
+                        {
+                            "type": "locator",
+                            "value": {
+                                "classchain": "**/XCUIElementTypeButton[`label == \"%s\"`]",
+                                "args": [
+                                    {
+                                        "name": "item",
+                                        "type": "string"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "elements": [
+        {
+            "name": "tabBarItem",
+            "type": [
+                "clickable"
+            ],
+            "selector": {
+                "classchain": "**/XCUIElementTypeButton[`label == \"%s\"`]",
+                "args": [
+                    {
+                        "name": "item",
+                        "type": "string"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "tabBarItems",
+            "type": [
+                "clickable"
+            ],
+            "public": true,
+            "selector": {
+                "classchain": "**/*[$type == 'XCUIElementTypeButton'$]",
+                "returnAll": true
+            }
+        }
+    ]
+}

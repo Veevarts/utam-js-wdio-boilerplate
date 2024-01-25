@@ -1,0 +1,22 @@
+{
+    "description": {
+        "author": "Salesforce",
+        "text": [
+            "Selector: ebuilder_framework-property-sheet-ui",
+            "Represents the builder_framework-property-sheet-ui web component.",
+            "Access different fields in the  container modal."
+        ]
+    },
+    "shadow": {
+        "elements": [
+            {
+                "name": "frameworkComponent",
+                "selector": {
+                    "css": "builder_framework-component"
+                },
+                "public": true,
+                "type": "utam-force/pageObjects/frameworkComponent"
+            }
+        ]
+    }
+}

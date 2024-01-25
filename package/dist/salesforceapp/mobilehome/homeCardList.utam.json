@@ -1,0 +1,73 @@
+{
+    "description": {
+        "author": "Salesforce",
+        "text": [
+            "Represents the mobile home cards scrollview.",
+            "Verify cards are present or navigate to one."
+        ]
+    },
+    "interface": true,
+    "exposeRootElement": true,
+    "type": [
+        "actionable",
+        "touchable"
+    ],
+    "methods": [
+        {
+            "name": "getVisibleCardBadges",
+            "returnType": [
+                "clickable",
+                "actionable"
+            ],
+            "returnAll": true
+        },
+        {
+            "name": "hasCardWithBadgeLabel",
+            "returnType": "boolean",
+            "args": [
+                {
+                    "name": "badgeLabel",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "clickCardWithBadgeLabel",
+            "args": [
+                {
+                    "name": "badgeLabel",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "editCardWithBadgeLabel",
+            "args": [
+                {
+                    "name": "cardLabel",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "hasCardBadgeWithTitle",
+            "args": [
+                {
+                    "name": "badgeTitle",
+                    "type": "string"
+                }
+            ],
+            "returnType": "boolean"
+        },
+        {
+            "name": "scrollToCardWithBadgeLabel",
+            "args": [
+                {
+                    "name": "badgeLabel",
+                    "type": "string"
+                }
+            ],
+            "returnType": "string"
+        }
+    ]
+}

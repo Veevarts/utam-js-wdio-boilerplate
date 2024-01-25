@@ -1,0 +1,81 @@
+{
+    "description": {
+        "author": "Salesforce",
+        "text": [
+            "Selector: salesforce1:actionBarHalfSheet:tableView.",
+            "Represents the iOS modal of all the record actions.",
+            "Find an action and navigate to it."
+        ]
+    },
+    "implements": "utam-salesforceapp/pageObjects/record/actionBarOverflow",
+    "root": true,
+    "platform": "native",
+    "exposeRootElement": true,
+    "type": [
+        "actionable",
+        "touchable"
+    ],
+    "profile": [
+        {
+            "platform": [
+                "ios_phone",
+                "ios_tablet"
+            ]
+        }
+    ],
+    "selector": {
+        "accessid": "salesforce1:actionBarHalfSheet:tableView"
+    },
+    "methods": [
+        {
+            "name": "clickActionWithLabel",
+            "compose": [
+                {
+                    "applyExternal": {
+                        "type": "utam-salesforceapp/utils/record/actionBarOverflowiOSUtils",
+                        "invoke": "clickAction",
+                        "args": [
+                            {
+                                "name": "label",
+                                "type": "string"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "getAllActionLabels",
+            "compose": [
+                {
+                    "element": "allActions",
+                    "apply": "getText"
+                }
+            ]
+        }
+    ],
+    "elements": [
+        {
+            "name": "visibleActions",
+            "type": [
+                "clickable",
+                "actionable"
+            ],
+            "public": true,
+            "selector": {
+                "classchain": "**/XCUIElementTypeCell[`visible == true`]",
+                "returnAll": true
+            }
+        },
+        {
+            "name": "allActions",
+            "type": [
+                "actionable"
+            ],
+            "selector": {
+                "classchain": "**/XCUIElementTypeCell",
+                "returnAll": true
+            }
+        }
+    ]
+}

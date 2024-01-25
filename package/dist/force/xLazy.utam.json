@@ -1,0 +1,23 @@
+{
+    "description": {
+        "author": "Salesforce",
+        "text": [
+            "Selector: x-lazy",
+            "Represents the x-lazy web component.",
+            "Access different fields in the  container modal."
+        ]
+    },
+    "shadow": {
+        "elements": [
+            {
+                "name": "innerFrameworkComponent",
+                "selector": {
+                    "css": "section > div > builder_framework-component",
+                    "returnAll": true
+                },
+                "public": true,
+                "type": "utam-force/pageObjects/component"
+            }
+        ]
+    }
+}

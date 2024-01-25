@@ -1,0 +1,22 @@
+{
+    "description": {
+        "author": "Salesforce",
+        "text": [
+            "Represents the Context Menu.",
+            "Click on an item in the Menu."
+        ]
+    },
+    "interface": true,
+    "root": true,
+    "methods": [
+        {
+            "name": "clickItemWithId",
+            "args": [
+                {
+                    "name": "label",
+                    "type": "string"
+                }
+            ]
+        }
+    ]
+}

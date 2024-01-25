@@ -1,0 +1,28 @@
+{
+    "description": {
+        "author": "Salesforce",
+        "text": [
+            "Selector: .forceHighlightsPanel",
+            "Represents the force-highlightsPanel Lightning web component.",
+            "Get primary fields or secondary fields."
+        ]
+    },
+    "elements": [
+        {
+            "name": "primaryField",
+            "public": true,
+            "selector": {
+                "css": ".primaryField .uiOutputText, .slds-page-header__title"
+            }
+        },
+        {
+            "name": "secondaryFields",
+            "public": true,
+            "type": "utam-records/pageObjects/secondaryFields",
+            "selector": {
+                "css": ".forceHighlightsMobileListRecordItem, .slds-page-header__detail-block",
+                "returnAll": true
+            }
+        }
+    ]
+}

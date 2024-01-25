@@ -8,8 +8,47 @@ coverage
 *.log
 *.pem
 tsconfig.tsbuildinfo
+tsconfig.build.tsbuildinfo
 dump.rdb
 logfile
+.sfdx
+.sf
 
 # Project artifacts
-pageObjects/
+__benchmarks_results__/
+testing_dev/
+
+# Builds
+packages/*/build/
+packages/*/dist/
+
+# Generated Page Objects
+**/pageObjects/
+
+# Generated Utils
+**/utils/
+
+# Generated .env
+.env
+**.env
+
+# npmrc
+.npmrc
+
+# Generated JSON files
+utam-generator/__utam__/**.json
+utam-generator/__generated__/**.json
+# HTML sources
+utam-generator/src/**
+
+# Generated sarif reports
+**/utam-lint.sarif
+
+# yarn - If you're not using Zero-Installs: https://yarnpkg.com/features/caching#zero-installs
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions

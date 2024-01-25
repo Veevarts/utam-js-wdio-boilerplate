@@ -1,0 +1,19 @@
+{
+    "description": {
+        "author": "Salesforce",
+        "text": [
+            "Represents content of the action bar in the 'Mobile Security' activity.",
+            "Refresh and resolve the security check and verify the details of the result."
+        ]
+    },
+    "interface": true,
+    "root": true,
+    "methods": [
+        {
+            "name": "clickInfoAndHealthyPolicies"
+        },
+        {
+            "name": "clickRefresh"
+        }
+    ]
+}

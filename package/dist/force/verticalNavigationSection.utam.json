@@ -1,0 +1,113 @@
+{
+    "description": {
+        "author": "Salesforce",
+        "text": [
+            "Selector: lightning-vertical-navigation-section.",
+            "Represents the lightning-vertical-navigation-section Lightning web component.",
+            "Get the label, all the vertical navigation items, the active item, an item by name, or an item by index."
+        ]
+    },
+    "methods": [
+        {
+            "name": "getLabel",
+            "description": {
+                "text": [
+                    "Get the header label"
+                ],
+                "return": "string"
+            },
+            "compose": [
+                {
+                    "element": "header",
+                    "apply": "getText"
+                }
+            ]
+        }
+    ],
+    "shadow": {
+        "elements": [
+            {
+                "name": "header",
+                "type": [
+                    "actionable"
+                ],
+                "selector": {
+                    "css": "h2.slds-nav-vertical__title"
+                }
+            }
+        ]
+    },
+    "elements": [
+        {
+            "name": "items",
+            "type": "utam-force/pageObjects/verticalNavigationItem",
+            "selector": {
+                "css": ".slds-nav-vertical__item",
+                "returnAll": true
+            },
+            "public": true
+        },
+        {
+            "name": "activeItem",
+            "type": "utam-force/pageObjects/verticalNavigationItem",
+            "selector": {
+                "css": ".slds-nav-vertical__item.slds-is-active"
+            },
+            "public": true
+        },
+        {
+            "name": "itemByName",
+            "type": "utam-force/pageObjects/verticalNavigationItem",
+            "public": true,
+            "selector": {
+                "css": ".slds-nav-vertical__item",
+                "returnAll": true
+            },
+            "filter": {
+                "apply": "getName",
+                "findFirst": true,
+                "matcher": {
+                    "type": "stringContains",
+                    "args": [
+                        {
+                            "name": "itemText",
+                            "type": "string"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "itemAtIndex",
+            "type": "utam-force/pageObjects/verticalNavigationItem",
+            "selector": {
+                "css": ".slds-nav-vertical__item:nth-of-type(%d)",
+                "args": [
+                    {
+                        "name": "index",
+                        "type": "number"
+                    }
+                ]
+            },
+            "public": true
+        },
+        {
+            "name": "verticalNavigationItemIcons",
+            "type": "utam-force/pageObjects/verticalNavigationItemIcon",
+            "selector": {
+                "css": "lightning-vertical-navigation-item-icon",
+                "returnAll": true
+            },
+            "public": true
+        },
+        {
+            "name": "verticalNavigationItemBadges",
+            "type": "utam-force/pageObjects/verticalNavigationItemBadge",
+            "selector": {
+                "css": "lightning-vertical-navigation-item-badge",
+                "returnAll": true
+            },
+            "public": true
+        }
+    ]
+}

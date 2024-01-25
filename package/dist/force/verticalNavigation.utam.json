@@ -1,0 +1,28 @@
+{
+    "description": {
+        "author": "Salesforce",
+        "text": [
+            "Selector: lightning-vertical-navigation.",
+            "Represents the lightning-vertical-navigation Lightning web component.",
+            "Get the verticalNavigationSection or verticalNavigationOverflow components."
+        ]
+    },
+    "elements": [
+        {
+            "name": "verticalNavigationSection",
+            "type": "utam-force/pageObjects/verticalNavigationSection",
+            "selector": {
+                "css": "lightning-vertical-navigation-section"
+            },
+            "public": true
+        },
+        {
+            "name": "verticalNavigationOverflow",
+            "type": "utam-force/pageObjects/verticalNavigationOverflow",
+            "selector": {
+                "css": "lightning-vertical-navigation-overflow"
+            },
+            "public": true
+        }
+    ]
+}

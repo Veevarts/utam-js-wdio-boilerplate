@@ -1,0 +1,28 @@
+{
+    "description": {
+        "text": [
+            "lightning-button"
+        ],
+        "author": "Salesforce"
+    },
+    "shadow": {
+        "elements": [
+            {
+                "name": "cancelButton",
+                "public": true,
+                "type": "utam-lightning/pageObjects/button",
+                "selector": {
+                    "css": "button.slds-button.slds-button_neutral"
+                }
+            },
+            {
+                "name": "publishButton",
+                "public": true,
+                "type": "utam-lightning/pageObjects/button",
+                "selector": {
+                    "css": "button.slds-button.slds-button_brand"
+                }
+            }
+        ]
+    }
+}

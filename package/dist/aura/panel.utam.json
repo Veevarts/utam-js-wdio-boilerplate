@@ -1,0 +1,61 @@
+{
+    "description": {
+        "author": "Salesforce",
+        "text": [
+            "Selector: .uiPanel.",
+            "Represents the ui:panel Aura component.",
+            "Get the panel content for a specific container, or a button element by text.",
+            "Get the force:DetailPanelMobile or visualEditor:ComponentPropertiesEditor components."
+        ]
+    },
+    "elements": [
+        {
+            "name": "propertiesEditor",
+            "type": "utam-aura/pageObjects/componentPropertiesEditor",
+            "selector": {
+                "css": ".panel-content .visualEditorComponentPropertiesEditor"
+            },
+            "public": true
+        },
+        {
+            "name": "detailPanelMobile",
+            "type": "utam-force/pageObjects/detailPanelMobile",
+            "selector": {
+                "css": ".panel-content .forceDetailPanelMobile"
+            },
+            "public": true
+        },
+        {
+            "name": "content",
+            "type": "container",
+            "selector": {
+                "css": ".panel-content >*"
+            },
+            "public": true
+        },
+        {
+            "name": "buttonWithText",
+            "type": [
+                "clickable"
+            ],
+            "selector": {
+                "css": "button.slds-button",
+                "returnAll": true
+            },
+            "filter": {
+                "apply": "getText",
+                "findFirst": true,
+                "matcher": {
+                    "type": "stringContains",
+                    "args": [
+                        {
+                            "name": "text",
+                            "type": "string"
+                        }
+                    ]
+                }
+            },
+            "public": true
+        }
+    ]
+}

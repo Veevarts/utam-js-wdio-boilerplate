@@ -1,0 +1,158 @@
+{
+    "description": {
+        "author": "Salesforce",
+        "text": [
+            "Represents a Lightning Card."
+        ]
+    },
+    "exposeRootElement": true,
+    "type": [
+        "actionable"
+    ],
+    "methods": [
+        {
+            "name": "getTitleText",
+            "compose": [
+                {
+                    "element": "titleContainer",
+                    "apply": "getText"
+                }
+            ]
+        },
+        {
+            "name": "getParagraphsText",
+            "compose": [
+                {
+                    "element": "paragraphs",
+                    "apply": "getText"
+                }
+            ]
+        },
+        {
+            "name": "scrollToCenter",
+            "compose": [
+                {
+                    "element": "root",
+                    "apply": "scrollToCenter"
+                }
+            ]
+        }
+    ],
+    "shadow": {
+        "elements": [
+            {
+                "name": "header",
+                "selector": {
+                    "css": "header"
+                },
+                "elements": [
+                    {
+                        "name": "titleContainer",
+                        "selector": {
+                            "css": "span[class*='slds-text-heading_small']"
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    "elements": [
+        {
+            "name": "comboBoxByLabel",
+            "type": "utam-lightning/pageObjects/combobox",
+            "public": true,
+            "selector": {
+                "css": "lightning-combobox",
+                "returnAll": true
+            },
+            "filter": {
+                "apply": "getLabelText",
+                "matcher": {
+                    "type": "stringEquals",
+                    "args": [
+                        {
+                            "name": "labelStr",
+                            "type": "string"
+                        }
+                    ]
+                },
+                "findFirst": true
+            }
+        },
+        {
+            "name": "inputFieldByLabel",
+            "type": "utam-lightning/pageObjects/input",
+            "public": true,
+            "selector": {
+                "css": "lightning-input",
+                "returnAll": true
+            },
+            "filter": {
+                "apply": "getLabelText",
+                "matcher": {
+                    "type": "stringEquals",
+                    "args": [
+                        {
+                            "name": "labelStr",
+                            "type": "string"
+                        }
+                    ]
+                },
+                "findFirst": true
+            }
+        },
+        {
+            "name": "buttonByLabel",
+            "type": "utam-lightning/pageObjects/button",
+            "public": true,
+            "selector": {
+                "css": "lightning-button",
+                "returnAll": true
+            },
+            "filter": {
+                "apply": "getButtonName",
+                "matcher": {
+                    "type": "stringEquals",
+                    "args": [
+                        {
+                            "name": "labelStr",
+                            "type": "string"
+                        }
+                    ]
+                },
+                "findFirst": true
+            }
+        },
+        {
+            "name": "preSection",
+            "selector": {
+                "css": "pre"
+            },
+            "elements": [
+                {
+                    "name": "recordResult",
+                    "public": true,
+                    "selector": {
+                        "css": "code"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "paragraphs",
+            "selector": {
+                "css": "p",
+                "returnAll": true
+            }
+        },
+        {
+            "name": "layout",
+            "type": "utam-sfsmobileapp/pageObjects/lwc/layout",
+            "public": true,
+            "selector": {
+                "css": "lightning-layout",
+                "returnAll": true
+            }
+        }
+    ]
+}

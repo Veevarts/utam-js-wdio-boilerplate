@@ -1,0 +1,45 @@
+{
+    "description": {
+        "author": "Salesforce",
+        "text": [
+            "Selector: TopBrowserBar.",
+            "Represents the iOS Top Browser Bar.",
+            "Click on 'Done' button."
+        ]
+    },
+    "implements": "utam-playgroundapp/pageObjects/navigation/topBrowserBar",
+    "root": true,
+    "platform": "native",
+    "profile": [
+        {
+            "platform": [
+                "ios_phone"
+            ]
+        }
+    ],
+    "selector": {
+        "accessid": "TopBrowserBar"
+    },
+    "methods": [
+        {
+            "name": "clickDone",
+            "compose": [
+                {
+                    "element": "doneButton",
+                    "apply": "click"
+                }
+            ]
+        }
+    ],
+    "elements": [
+        {
+            "name": "doneButton",
+            "type": [
+                "clickable"
+            ],
+            "selector": {
+                "classchain": "**/XCUIElementTypeButton[`label == \"Done\"`]"
+            }
+        }
+    ]
+}

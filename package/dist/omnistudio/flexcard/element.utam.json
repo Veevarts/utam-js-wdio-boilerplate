@@ -1,0 +1,24 @@
+{
+    "description": {
+        "text": [
+            "Selector:div[data-conditions]"
+        ],
+        "author": "Salesforce"
+    },
+    "elements": [
+        {
+            "type": "container",
+            "name": "content",
+            "public": true,
+            "selector": {
+                "css": "%s",
+                "args": [
+                    {
+                        "name": "cssString",
+                        "type": "string"
+                    }
+                ]
+            }
+        }
+    ]
+}

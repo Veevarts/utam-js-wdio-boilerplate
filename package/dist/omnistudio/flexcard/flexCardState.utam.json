@@ -1,0 +1,19 @@
+{
+    "description": {
+        "text": [
+            "Selector: runtime_omnistudio_flexcards-flex-card-state"
+        ],
+        "author": "Salesforce"
+    },
+    "elements": [
+        {
+            "type": "utam-omnistudio/pageObjects/flexcard/element",
+            "name": "elements",
+            "public": true,
+            "selector": {
+                "css": "div[data-conditions]",
+                "returnAll": true
+            }
+        }
+    ]
+}

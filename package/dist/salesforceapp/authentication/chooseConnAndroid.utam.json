@@ -1,0 +1,70 @@
+{
+    "description": {
+        "author": "Salesforce",
+        "text": [
+            "Selector: resourceId(\"android:id/content\").",
+            "Represents the Android 'Change Server' fragment.",
+            "Add a new server, or switch to another existing one by environment name."
+        ]
+    },
+    "implements": "utam-salesforceapp/pageObjects/authentication/chooseConn",
+    "root": true,
+    "platform": "native",
+    "profile": [
+        {
+            "platform": [
+                "android_phone",
+                "android_tablet"
+            ]
+        }
+    ],
+    "selector": {
+        "uiautomator": "resourceId(\"android:id/content\")"
+    },
+    "methods": [
+        {
+            "name": "addNewConnection",
+            "compose": [
+                {
+                    "element": "addConnBtn",
+                    "apply": "click"
+                }
+            ]
+        },
+        {
+            "name": "switchConnection",
+            "compose": [
+                {
+                    "element": "chooseEnv",
+                    "apply": "click"
+                }
+            ]
+        }
+    ],
+    "elements": [
+        {
+            "name": "addConnBtn",
+            "type": [
+                "clickable"
+            ],
+            "selector": {
+                "uiautomator": "resourceIdMatches(\".*sf__show_custom_url_edit\")"
+            }
+        },
+        {
+            "name": "chooseEnv",
+            "type": [
+                "clickable"
+            ],
+            "selector": {
+                "uiautomator": "className(\"android.widget.RadioButton\").textContains(\"%s\")",
+                "args": [
+                    {
+                        "name": "envName",
+                        "type": "string"
+                    }
+                ]
+            }
+        }
+    ]
+}

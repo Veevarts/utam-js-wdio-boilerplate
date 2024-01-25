@@ -20,6 +20,7 @@
         "chromedriver": "^120.0.1",
         "ts-node": "^10.9.2",
         "typescript": "^5.3.3",
+        "utam": "^2.2.0",
         "wdio-chromedriver-service": "^8.1.1",
         "wdio-utam-service": "^2.2.0"
     },
@@ -31,6 +32,7 @@
         "node": ">=18"
     },
     "dependencies": {
-        "salesforce-pageobjects": "^6.0.0"
+        "salesforce-pageobjects": "^6.0.0",
+        "yarn": "^1.22.21"
     }
 }

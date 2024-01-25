@@ -1,0 +1,46 @@
+{
+    "description": {
+        "author": "Salesforce",
+        "text": [
+            "Selector: resourceId(\"android:id/action_bar_container\").",
+            "Represents the action bar in the Android login activity.",
+            "Load the screen to create or choose a different connection."
+        ]
+    },
+    "implements": "utam-salesforceapp/pageObjects/authentication/loginNavBar",
+    "root": true,
+    "platform": "native",
+    "profile": [
+        {
+            "platform": [
+                "android_phone",
+                "android_tablet"
+            ]
+        }
+    ],
+    "selector": {
+        "uiautomator": "resourceId(\"android:id/action_bar_container\")"
+    },
+    "methods": [
+        {
+            "name": "chooseConnOption",
+            "compose": [
+                {
+                    "element": "connBtn",
+                    "apply": "click"
+                }
+            ]
+        }
+    ],
+    "elements": [
+        {
+            "name": "connBtn",
+            "type": [
+                "clickable"
+            ],
+            "selector": {
+                "accessid": "More options"
+            }
+        }
+    ]
+}

@@ -1,0 +1,49 @@
+{
+    "description": {
+        "author": "Salesforce",
+        "text": [
+            "Selector: .test-bed.",
+            "Represents the test-bed Lightning web component.",
+            "Check if a record is present. Get the outputfield components or a record form element."
+        ]
+    },
+    "root": true,
+    "selector": {
+        "css": ".test-bed"
+    },
+    "elements": [
+        {
+            "name": "outputFields",
+            "type": "utam-lightning/pageObjects/outputField",
+            "selector": {
+                "css": "lightning-output-field",
+                "returnAll": true
+            },
+            "public": true
+        },
+        {
+            "name": "recordForm",
+            "selector": {
+                "css": ".record-form"
+            },
+            "public": true
+        }
+    ],
+    "methods": [
+        {
+            "name": "isRecordPresent",
+            "description": {
+                "text": [
+                    "Gets a value indicating whether the record is visible"
+                ],
+                "return": "true if the record is visible; otherwise, false"
+            },
+            "compose": [
+                {
+                    "element": "recordForm",
+                    "apply": "isVisible"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+{
+    "root": true,
+    "selector": {
+        "css": "div[class*=oneUtilityBarContainer]"
+    },
+    "description": {
+        "text": [
+            "Selector: .oneUtilityBarContainer.",
+            "Represents the one:utilityBarContainer Aura component.",
+            "Access the dockable panel."
+        ],
+        "author": "Salesforce"
+    },
+    "elements": [
+        {
+            "public": true,
+            "name": "dockablePanel",
+            "selector": {
+                "css": "div[class*=forceDockingPanel--dockable%s]",
+                "args": [
+                    {
+                        "name": "apiName",
+                        "type": "string"
+                    }
+                ]
+            }
+        }
+    ]
+}

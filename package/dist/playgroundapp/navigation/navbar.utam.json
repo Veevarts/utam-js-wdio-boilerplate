@@ -1,0 +1,188 @@
+{
+    "description": {
+        "author": "Salesforce",
+        "text": [
+            "Selector: div.themeHeader.forceCommunityThemeHeaderBase.forceCommunityThemeHeaderCompact.",
+            "Represents Navigation Bar.",
+            "Access the profile menu, toggle navigation, or click login button."
+        ]
+    },
+    "root": true,
+    "beforeLoad": [
+        {
+            "apply": "waitFor",
+            "args": [
+                {
+                    "type": "function",
+                    "predicate": [
+                        {
+                            "element": "root",
+                            "apply": "isPresent"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "selector": {
+        "css": "div.themeHeader.forceCommunityThemeHeaderBase.forceCommunityThemeHeaderCompact"
+    },
+    "methods": [
+        {
+            "name": "clickLogin",
+            "compose": [
+                {
+                    "apply": "waitFor",
+                    "args": [
+                        {
+                            "type": "function",
+                            "predicate": [
+                                {
+                                    "element": "root",
+                                    "apply": "containsElement",
+                                    "args": [
+                                        {
+                                            "type": "locator",
+                                            "value": {
+                                                "css": "div.themeUtilsContainer"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "element": "loginButton",
+                                    "apply": "isPresent"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "element": "loginButton",
+                    "apply": "waitForVisible"
+                },
+                {
+                    "element": "loginButton",
+                    "apply": "click"
+                }
+            ]
+        },
+        {
+            "name": "clickProfile",
+            "compose": [
+                {
+                    "element": "profileButton",
+                    "apply": "waitForVisible"
+                },
+                {
+                    "element": "profileButton",
+                    "apply": "click"
+                }
+            ]
+        },
+        {
+            "name": "clickButtonWithTitle",
+            "compose": [
+                {
+                    "element": "buttonWithTitle",
+                    "apply": "click"
+                }
+            ]
+        },
+        {
+            "name": "toggleNavigation",
+            "compose": [
+                {
+                    "element": "navigationButton",
+                    "apply": "waitForVisible"
+                },
+                {
+                    "element": "navigationButton",
+                    "apply": "click"
+                }
+            ]
+        },
+        {
+            "name": "waitForProfileButton",
+            "compose": [
+                {
+                    "apply": "waitFor",
+                    "args": [
+                        {
+                            "type": "function",
+                            "predicate": [
+                                {
+                                    "element": "root",
+                                    "apply": "containsElement",
+                                    "args": [
+                                        {
+                                            "type": "locator",
+                                            "value": {
+                                                "css": ".themeUtilsContainer .themeProfileMenu"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "elements": [
+        {
+            "name": "loginButton",
+            "type": [
+                "clickable"
+            ],
+            "selector": {
+                "css": "a.cypressHomeHeader.commThemeCmp.profile-loginButton.forceCommunityThemeProfileMenu"
+            }
+        },
+        {
+            "name": "buttonWithTitle",
+            "type": [
+                "clickable"
+            ],
+            "selector": {
+                "css": "button[title='%s']",
+                "args": [
+                    {
+                        "name": "title",
+                        "type": "string"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "profileButton",
+            "type": [
+                "clickable"
+            ],
+            "selector": {
+                "css": ".themeUtilsContainer .themeProfileMenu"
+            },
+            "public": true
+        },
+        {
+            "name": "navigationButton",
+            "type": [
+                "clickable"
+            ],
+            "selector": {
+                "css": "button.forceCommunityThemeNavTrigger"
+            }
+        },
+        {
+            "name": "search",
+            "type": [
+                "clickable"
+            ],
+            "public": true,
+            "selector": {
+                "css": ".themeSearch"
+            }
+        }
+    ]
+}

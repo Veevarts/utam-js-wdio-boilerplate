@@ -1,0 +1,44 @@
+{
+    "description": {
+        "author": "Salesforce",
+        "text": [
+            "Selector: lst-dynamic-related-list-desktop.",
+            "Represents the dynamic related list desktop app builder Lightning web component.",
+            "Access the related list view manager."
+        ]
+    },
+    "selector": {
+        "css": "lst-dynamic-related-list-desktop"
+    },
+    "root": true,
+    "shadow": {
+        "elements": [
+            {
+                "name": "dynamicRelatedListWithUserPrefs",
+                "selector": {
+                    "css": "lst-dynamic-related-list-with-user-prefs"
+                },
+                "shadow": {
+                    "elements": [
+                        {
+                            "type": "utam-lists/pageObjects/relatedListViewManager",
+                            "name": "relatedListViewManager",
+                            "public": true,
+                            "selector": {
+                                "css": "lst-related-list-view-manager"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "utam-lists/pageObjects/errorState",
+                "name": "errorState",
+                "public": true,
+                "selector": {
+                    "css": "lst-error-state"
+                }
+            }
+        ]
+    }
+}
