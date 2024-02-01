@@ -3,12 +3,17 @@ const DatetimePicker = require("salesforce-pageobjects/lightning/pageObjects/dat
 const AppLauncherHeader = require('salesforce-pageobjects/global/pageObjects/appLauncherHeader')
 const RecordActionWrapper = require("salesforce-pageobjects/global/pageObjects/recordActionWrapper");
 const RecordHomeFlexipage2 = require("salesforce-pageobjects/global/pageObjects/recordHomeFlexipage2");
+const Tab2 = require('salesforce-pageobjects/flexipage/pageObjects/tab2');
 const ConsoleObjectHome = require('salesforce-pageobjects/force/pageObjects/objectHome');
 const FileUpload = require('salesforce-pageobjects/lightning/pageObjects/fileUpload');
+const RecordHomeTemplateDesktop = require('salesforce-pageobjects/global/pageObjects/recordHomeTemplateDesktop');
+const Button = require('../__utam__/button.utam.json')
+
 
 describe("Demo UTAM - Create New Exhibition", () => {
   it("Navigate to Inventory Service and click New", async () => {
     
+    const equalsIgnoreCase = (str1, str2) => str1.toLowerCase() === str2.toLowerCase();
     await browser.url("https://login.salesforce.com");
 
     const loginPage = await utam.load(Login);
@@ -19,6 +24,7 @@ describe("Demo UTAM - Create New Exhibition", () => {
 
     console.log("Loading Inventory Service Object Home page");
     const objectHome = await utam.load(ConsoleObjectHome);
+
     const listView = await objectHome.getListView();
     const listViewHeader = await listView.getHeader();
 
@@ -54,13 +60,48 @@ describe("Demo UTAM - Create New Exhibition", () => {
     await recordForm.clickFooterButton("Save");
     await recordFormModal.waitForAbsence();
 
-    console.log('Loading drop file');
-    const fileUploader = await utam.load(FileUpload);
-    await fileUploader.upload('');
-    // const appLauncherHeader = await utam.load(AppLauncherHeader);
-    // const appLauncher = await appLauncherHeader.getAppNav();
-    // const launcher = await appLauncher.getAppLauncherHeader();
-    // await launcher.getButton();
+    console.log('Select button Confirm');
+    const recordHome = await utam.load(RecordHomeFlexipage2);
+    const tabset = await recordHome.getTabset();
+
+    const detailsTabLabel = 'Ticketing';
+    console.log('Select "Details" tab');
+    const tabBar = await tabset.getTabBar();
+    const activeTabName = await tabBar.getActiveTabText();
+    if (!equalsIgnoreCase(activeTabName, detailsTabLabel)) {
+        await tabBar.clickTab(detailsTabLabel);
+    }
+
+    const selector = ".slds-button.slds-button_brand"; 
+    const confirmButton = await browser.$(selector);
+    
+    await confirmButton.waitForDisplayed({ timeout: 10000 });
+    await confirmButton.waitForClickable({ timeout: 10000 });
+    
+    const overlaySelector = '.loading _loaderBar';
+    const overlay = await browser.$(overlaySelector);
+    if (await overlay.isDisplayed()) {
+        await overlay.waitForDisplayed({ reverse: true, timeout: 10000 });
+    }
+  
+    try {
+        await confirmButton.click();
+    } catch (clickInterceptedError) {
+        await browser.execute((button) => button.click(), confirmButton);
+    }
+
+    const buttonLabel = 'Entire Week'; // The label of the button you want to click
+await browser.execute((label) => {
+    const buttons = Array.from(document.querySelectorAll('#\\36 84\\:0_content > article > div:nth-child(2) > div:nth-child(5) > fieldset > div.days-shortcut-cont'));
+    const targetButton = buttons.find(button => button.label === label);
+    if (targetButton) {
+        targetButton.click();
+    }
+}, buttonLabel);
+
+
+    
+  
     await browser.debug();
   });
 });

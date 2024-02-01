@@ -1,0 +1,48 @@
+{
+    "description": {
+        "author": "UTAM generator",
+        "text": [
+            "Page Object: page object name"
+        ]
+    },
+    "elements": [
+        {
+            "name": "section",
+            "type": [],
+            "selector": {
+                "css": "section"
+            },
+            "elements": [
+                {
+                    "public": true,
+                    "name": "divContent",
+                    "type": [],
+                    "selector": {
+                        "css": "div"
+                    }
+                },
+                {
+                    "public": true,
+                    "name": "EventType",
+                    "type": [
+                        "actionable"
+                    ],
+                    "selector": {
+                        "css": "lightning:combobox[name='EventType']"
+                    }
+                },
+                {
+                    "public": true,
+                    "name": "confirmButton",
+                    "type": [
+                        "actionable",
+                        "clickable"
+                    ],
+                    "selector": {
+                        "css": "lightning:button"
+                    }
+                }
+            ]
+        }
+    ]
+}

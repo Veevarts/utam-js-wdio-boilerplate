@@ -17,7 +17,8 @@
         "@wdio/jasmine-framework": "^8.28.4",
         "@wdio/local-runner": "^8.28.4",
         "@wdio/spec-reporter": "^8.28.0",
-        "chromedriver": "^120.0.1",
+        "chromedriver": "^120.0.2",
+        "mocha": "^10.2.0",
         "ts-node": "^10.9.2",
         "typescript": "^5.3.3",
         "utam": "^2.2.0",
@@ -32,7 +33,9 @@
         "node": ">=18"
     },
     "dependencies": {
+        "axios": "^1.6.7",
         "salesforce-pageobjects": "^6.0.0",
+        "selenium-webdriver": "^4.17.0",
         "yarn": "^1.22.21"
     }
 }

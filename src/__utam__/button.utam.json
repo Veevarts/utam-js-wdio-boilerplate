@@ -1,0 +1,21 @@
+{
+    "description": {
+        "author": "UTAM generator",
+        "text": [
+            "Page Object: page object name"
+        ]
+    },
+    "elements": [
+        {
+            "public": true,
+            "name": "button",
+            "type": [
+                "actionable",
+                "clickable"
+            ],
+            "selector": {
+                "css": "button.slds-button.slds-button_brand"
+            }
+        }
+    ]
+}

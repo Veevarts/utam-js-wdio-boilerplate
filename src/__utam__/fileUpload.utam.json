@@ -1,0 +1,30 @@
+{
+  "elements": [
+    {
+      "name": "fileIframe",
+      "public": true,
+      "type": "frame",
+      "selector": {
+        "css": "iframe[id^='canvas-outer-']"
+      }
+    },
+    {
+      "name": "uploadButton",
+      "public": true,
+      "selector": {
+        "css": "#myDropzone"
+      }
+    }
+  ],
+  "methods": [
+    {
+      "name": "switchToFileIframe",
+      "compose": [
+        {
+          "element": "fileIframe",
+          "apply": "switchToFrame"
+        }
+      ]
+    }
+  ]
+}
